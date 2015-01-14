@@ -39,3 +39,7 @@ brausr:
 # Google Analytics
 ga:
   id:             'UA-33882544-1'
+
+# Disqus
+disqus:
+  shortname:      'jonpitcherella'
