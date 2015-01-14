@@ -1,0 +1,14 @@
+body {
+	background-image: url("/public/img/splash.jpg");
+	background-attachment: fixed;
+}
+
+.page {
+	background: #fff;
+	padding: 1rem;
+}
+
+.post {
+	background: #fff;
+	padding: 1rem;
+}

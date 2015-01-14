@@ -1,0 +1,41 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Jon Pitcherella
+tagline:          'Developer. Home Brewer.'
+description:      'Great developer.<br />Home brewer and metal head.<br />User of haiku.'
+url:              http://jonpitcherella.com
+baseurl:          /
+
+author:
+  name:           'Jon Pitcherella'
+  url:            http://jonpitcherella.com
+
+paginate:         5
+
+# Social
+social:
+  email:          'jon.pitcherella@gmail.com'
+  googleplus:     '+JonPitcherella'
+  twitter:        'jonpitch'
+  facebook:       'jon.pitcherella'
+  linkedin:       'jonpitcherella'
+  github:         'jonpitch'
+  stackoverflow:  'users/349138/jon'
+
+# Brausr
+brausr:
+  twitter:        'brausr'
+  googleplus:     '+Brausr'
+  facebook:       'brausr'
+  url:            'http://brausr.com'
+
+# Google Analytics
+ga:
+  id:             'UA-33882544-1'
