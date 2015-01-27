@@ -1,2 +1,7 @@
 # jonpitch.github.io
-Personal website
+My personal website
+
+# Running locally
+* git clone
+* cd /path/to/repository
+* jekyll serve
