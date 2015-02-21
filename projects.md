@@ -5,7 +5,7 @@ title: Projects
 
 ## Brausr
 
-Brausr is a project I work on in my spare time to advance my knowledge of <a href="http://www.android.com/">Android</a>, <a href="https://www.apple.com/ios/">iOS</a>, mobile development, web development, marketing, social media, etc.
+Brausr is a project I work on in my spare time to advance my knowledge of [Android](http://www.android.com/), [iOS](https://www.apple.com/ios/), mobile development, web development, marketing, social media, etc.
 
 Brausr keeps Philadelphians up to date on local craft beer events and beer menus.
 
