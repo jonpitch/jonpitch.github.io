@@ -3,14 +3,29 @@ layout: page
 title: Blog
 ---
 
-{% for post in site.posts %}
 <div>
-	<div><a href="{{ post.url }}">{{ post.title }}</a></div>
-	<span class="post-date">{{ post.date | date_to_string }}</span>
-	<p><small>{{ post.excerpt }}</small></p>
-	<!--
-	<p><small><a href="{{ post.url }}#disqus_thread">{{ post.title }}</a></small></p>
-	-->
-</div>
-<hr />
+{% for post in site.posts  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+    {% if forloop.first %}
+    <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
+    <ul>
+    {% endif %}
+
+    <li>
+		<a href="{{ post.url }}">{{ post.title }}</a><br />
+		<span class="blog-date">{{ post.date | date: "%-d %B" }}</span>
+	</li>
+
+    {% if forloop.last %}
+    </ul>
+    {% else %}
+        {% if this_year != next_year %}
+        </ul>
+        <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
+        <ul>
+        {% endif %}
+    {% endif %}
 {% endfor %}
+</div>

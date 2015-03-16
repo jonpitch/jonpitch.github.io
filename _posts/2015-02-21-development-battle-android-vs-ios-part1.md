@@ -70,4 +70,4 @@ Both development environments have their strengths and weaknesses. When it comes
 
 What has been your experiences with both platforms? Since I'm really on scratching the surface of both environments, what did I miss that you think is important?
 
-Next, we'll cover what it's like to actually write code for each platform. *Stay tuned*
+Next, let's compare what it's like actually [writing code in both platforms](/2015/03/16/development-battle-android-vs-ios-part2/).
