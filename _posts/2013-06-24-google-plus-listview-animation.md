@@ -3,7 +3,7 @@ layout: post
 title: Google Plus ListView Animation
 ---
 
-The Google Plus app for Android has a nice ListView animation when scrolling down in a list, ListView items slide up into place.  This transition only happens on list items you haven't viewed yet and only in the scroll down direction, not in the scroll up direction.  Here's how you can achieve this effect:
+The Google Plus app for Android has a nice `ListView` animation when scrolling down in a list, `ListView` items slide up into place.  This transition only happens on list items you haven't viewed yet and only in the scroll down direction, not in the scroll up direction.  Here's how you can achieve this effect:
 
 {% highlight java %}
 public class YourAdapter extends ArrayAdapter {

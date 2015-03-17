@@ -3,21 +3,21 @@ layout: post
 title: Codeception Acceptance Tests - Using Multiple Databases
 ---
 
-<a href="http://codeception.com/" target="_blank">Codeception</a> is a great PHP testing framework and I would highly recommend it to anyone that needs functional, unit or acceptance testing, even if your application isn't PHP based. Not only does it give you a lot out of the box, but it's very modular and extensible.
+[Codeception](http://codeception.com/) is a great PHP testing framework and I would highly recommend it to anyone that needs functional, unit or acceptance testing, even if your application isn't PHP based. Not only does it give you a lot out of the box, but it's very modular and extensible.
 
-One of the most commonly used Codeception modules is the <a title="Codeception Db Module" href="http://codeception.com/docs/modules/Db" target="_blank">Db</a> module. The idea with the Db module is that you create a dump of your database, then before each scenario your database is rebuilt from the dump and after the scenario your database is cleaned up. This is great for testing because each of your tests can be data independent and stand by themselves.
+One of the most commonly used Codeception modules is the [Db](http://codeception.com/docs/modules/Db) module. The idea with the Db module is that you create a dump of your database, then before each scenario your database is rebuilt from the dump and after the scenario your database is cleaned up. This is great for testing because each of your tests can be data independent and stand by themselves.
 
 The only downside with the Db module is that it is meant to work in your traditional web application, meaning you have a web application and one database. But what if you are building a web application that instead of having a traditional database of its own, communicates with several web services and relies on those services for data? Assuming of course that these web services are your own and under your control, Codeception has you covered (that's a software testing pun for those keeping score at home).
 
-We can actually accomplish this fairly easily by using Codeception <a title="Codeception Extension Classes" href="http://codeception.com/docs/08-Customization#Extension-classes" target="_blank">Extension Classes</a>. What we'll be doing with Extensions is as follows:
+We can actually accomplish this fairly easily by using Codeception [Extension Classes](http://codeception.com/docs/08-Customization#Extension-classes). What we'll be doing with Extensions is as follows:
 
-* Hook into the "before test" and "after test" events with our Extension</span></li>
+* Hook into the "before test" and "after test" events with our Extension
 * Reconfigure the Db module to point to our web service, re-initialize the module and execute
   * Repeat for each web service
 
-To get started, we need to first enable the Db module in our Acceptance tests. Follow the <a title="Db Module Configuration" href="http://codeception.com/docs/modules/Db#Config" target="_blank">instructions</a> to setup the Db module. What's important here is that we set "populate" and "cleanup" to false and that "dump" points to a valid file. We set populate and cleanup to false because we don't want the Db module populating and cleaning up after each test. Well, we kind of do, but by default the Db module only communicates with one database where we need multiple.
+To get started, we need to first enable the Db module in our Acceptance tests. Follow the [instructions](http://codeception.com/docs/modules/Db#Config) to setup the Db module. What's important here is that we set `populate` and `cleanup` to false and that `dump` points to a valid file. We set populate and cleanup to false because we don't want the Db module populating and cleaning up after each test. Well, we kind of do, but by default the Db module only communicates with one database where we need multiple.
 
-Second, follow the <a title="Codeception Extension Instructions" href="http://codeception.com/docs/08-Customization#Extension-classes" target="_blank">instructions</a> for creating a basic Codeception Extension. After you have setup your class, configured and included it in your bootstrap, you can use the following code as a guide:
+Second, follow the [instructions](http://codeception.com/docs/08-Customization#Extension-classes) for creating a basic Codeception Extension. After you have setup your class, configured and included it in your bootstrap, you can use the following code as a guide:
 
 {% highlight php %}
 class YourExtensionClass extends \Codeception\Platform\Extension {
@@ -25,15 +25,15 @@ class YourExtensionClass extends \Codeception\Platform\Extension {
     // events to listen on
     static $events = array(
         'test.before' => 'beforeTest',
-        'test.after' => 'afterTest',	
+        'test.after' => 'afterTest',
     );
 
-    function beforeTest(\CodeCeption\Event\Test $e) 
+    function beforeTest(\CodeCeption\Event\Test $e)
     {
         // get the test and groups
         $test = $e->getTest();
         $groups = $test->getScenario()->getGroups();
-    
+
         // only restore if annotated to do so
         if (in_array('api', $groups)) {
             // get the Db module

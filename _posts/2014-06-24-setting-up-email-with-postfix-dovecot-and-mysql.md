@@ -3,7 +3,7 @@ layout: post
 title: Setting Up Email with Postfix, Dovecot and MySQL
 ---
 
-I had recently set up a Linode (which is awesome by the way) to handle the incoming and outgoing mail of a domain of mine. Linode actually has very good instructions on the subject, which can be found <a href="https://library.linode.com/email/postfix/postfix2.9.6-dovecot2.0.19-mysql" title="Linode Email with Postfix, Dovecot and MySQL" target="_blank">here</a>.
+I had recently set up a Linode (which is awesome by the way) to handle the incoming and outgoing mail of a domain of mine. Linode actually has very good instructions on the subject, which can be found [here](https://library.linode.com/email/postfix/postfix2.9.6-dovecot2.0.19-mysql).
 
 After following these instructions to the letter and configuring my Android mail client to theoretically send and receive mail at my domain, I was having no luck.
 
@@ -22,7 +22,7 @@ postmaster_address setting not given
 Linode's documentation did not mention this anywhere, but after many Google searches later, what I had to edit was:
 
 {% highlight bash %}
-/etc/dovecot/conf.d/15-lda.conf 
+/etc/dovecot/conf.d/15-lda.conf
 {% endhighlight %}
 
 In this config, I just had to add:

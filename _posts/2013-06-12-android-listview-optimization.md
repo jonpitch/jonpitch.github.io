@@ -41,4 +41,4 @@ public class MyAdapter extends ArrayAdapter {
 }
 {% endhighlight %}
 
-<em>findViewById()</em> can be very expensive, especially if you have to perform it multiple times.  As you scroll through a large ListView, this can be a large performance hit.  If we only perform the <em>findViewById()</em> once and associate it with the convertView, on subsequent rendering of that ListView item we won't have to perform the <em>findViewById()</em>.  Everyone wins, especially your users who don't have to put up with laggy ListViews.
+`findViewById()` can be very expensive, especially if you have to perform it multiple times.  As you scroll through a large `ListView`, this can be a large performance hit.  If we only perform the `findViewById()` once and associate it with the `convertView`, on subsequent rendering of that `ListView` item we won't have to perform the `findViewById()`.  Everyone wins, especially your users who don't have to put up with laggy `ListView`s.

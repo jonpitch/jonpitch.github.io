@@ -3,7 +3,7 @@ layout: post
 title: Building a MEAN Pi
 ---
 
-If JavaScript isn't your thing, turn back now because we're going to be implementing the MEAN stack on a Raspberry Pi. The MEAN stack (MongoDB, Express, AngularJS and NodeJS) is a web stack based entirely in JavaScript. 
+If JavaScript isn't your thing, turn back now because we're going to be implementing the MEAN stack on a Raspberry Pi. The MEAN stack (MongoDB, Express, AngularJS and NodeJS) is a web stack based entirely in JavaScript.
 
 Before we get started, you'll need a few things:
 
@@ -13,12 +13,12 @@ Before we get started, you'll need a few things:
 * Lots of free time
 
 ## A Few Notes First
-My motivation for this project is home automation.  My Pi will be making use of z-wave to control some devices around my house.  Specifically, I'll be using the <a title="razberry z-wave" href="http://razberry.zwave.me/" target="_blank">Razberry</a> project as a basis for my home automation.  What's nice about Razberry is that it provides JSON API for accessing your z-wave devices and has a somewhat decent web application as well.  The downside is that development of this project is fairly slow for my liking and there are a few features lacking, namely authentication.  My end goal is to be able to control my house with my Android phone and I'm not about to open up my home automation controller to the world without at least some basic authentication wrapped around it.  Additionally, the Razberry web app is more complicated than what I really need; what I really want is just a responsive web application with basic functionality and a REST API that I can later hook a future Android application up to.
+My motivation for this project is home automation.  My Pi will be making use of z-wave to control some devices around my house.  Specifically, I'll be using the [RaZberry](http://razberry.zwave.me/) project as a basis for my home automation.  What's nice about Razberry is that it provides JSON API for accessing your z-wave devices and has a somewhat decent web application as well.  The downside is that development of this project is fairly slow for my liking and there are a few features lacking, namely authentication.  My end goal is to be able to control my house with my Android phone and I'm not about to open up my home automation controller to the world without at least some basic authentication wrapped around it.  Additionally, the Razberry web app is more complicated than what I really need; what I really want is just a responsive web application with basic functionality and a REST API that I can later hook a future Android application up to.
 
 Secondly, you really do want a 512 MB Pi.  You can get by with a 256 MB version, but you will run into complications installing MongoDB.  You also want at least an 8 GB SD Card.  If you install the basic Raspbian image for your Pi (which we're going to do), Raspbian (with X) and MongoDB by itself are almost 4 GB.  You may be able to scrape by with a 4 GB card if you remove non-essential packages or use a slimmed down version of Raspbian, but SD cards are practically free these days, so just get one with adequate space.
 
 ## Setting Up Your Raspberry Pi
-For the sake of a tutorial, I'll assume this is entirely new for those reading.  If you have built a Pi before, you could probably disregard this section.  To get started, you'll need to drop the latest Raspbian image onto your SD card.  You can download Raspbian <a title="raspbian downloads" href="http://www.raspberrypi.org/downloads" target="_blank">here</a>.
+For the sake of a tutorial, I'll assume this is entirely new for those reading.  If you have built a Pi before, you could probably disregard this section.  To get started, you'll need to drop the latest Raspbian image onto your SD card.  You can download Raspbian [here](http://www.raspberrypi.org/downloads).
 
 For Windows and OSX, there are plenty of image writing tools out there, which I won't be covering.  Since I'm using Linux, to write the image to the SD card:
 
@@ -157,7 +157,7 @@ To start and stop NodeJS, you can use the following commands respectively:
 {% highlight bash %}sudo /etc/init.d/nodejs.sh start
 sudo /etc/init.d/nodejs.sh stop{% endhighlight %}
 
-You should now have your NodeJS server up and running on port 8080.  Special thanks to Matthias Rüedlinger who put this together.  You can read more in depth about his process <a title="matt's blog" href="http://blog.rueedlinger.ch/2013/03/raspberry-pi-and-nodejs-basic-setup/" target="_blank">here</a>.
+You should now have your NodeJS server up and running on port 8080.  Special thanks to Matthias Rüedlinger who put this together.  You can read more in depth about his process [here](http://blog.rueedlinger.ch/2013/03/raspberry-pi-and-nodejs-basic-setup/).
 
 ## Install Express
 In the directory of our application, which we had as <em>/home/pi/application</em>, we'll want to create a file called <em>package.json:</em>
@@ -205,7 +205,7 @@ sudo cp debian/mongodb.conf /etc/
 sudo ln -s /opt/mongo/bin/mongod /usr/bin/mongod
 {% endhighlight %}
 
-Thanks to Andy Felong who helped out with this.  You can read his blog post on the subject <a title="mongodb on pi" href="http://andyfelong.com/2013/02/raspberry-pi-meets-mongodb/" target="_blank">here</a>.
+Thanks to Andy Felong who helped out with this.  You can read his blog post on the subject [here](http://andyfelong.com/2013/02/raspberry-pi-meets-mongodb/).
 
 ## Conclusion
 You're probably asking yourself, where the hell is the 'A'?  I asked for a MEAN Pi, not a MEN Pi <em>(insert a joke of your choice here)</em>.  My next entry will include the actual development stack, wiring up NodeJS with MongoDB, data binding with Angular, creating a NodeJS REST API, etc.  Stay tuned!
