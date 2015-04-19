@@ -10,6 +10,5 @@ I will try at great lengths to keep my Android/Google bias and anti-Apple opinio
 * [Part 1: Development Tools](/2015/02/21/development-battle-android-vs-ios-part1/)
 * [Part 2: Code](/2015/03/16/development-battle-android-vs-ios-part2/)
 * [Part 3: Testing & debugging](/2015/03/24/development-battle-android-vs-ios-part3/)
-* Part 4: Deployment (*coming soon*)
-* Part 5: Post-deployment analytics & metrics (*coming soon*)
-* Part 6: Summary (*coming soon*)
+* [Part 4: Deployment, analytics & metrics](/2015/04/19/development-battle-android-vs-ios-part4/)
+* [Part 5: Summary](/2015/04/19/development-battle-android-vs-ios-part5/)
