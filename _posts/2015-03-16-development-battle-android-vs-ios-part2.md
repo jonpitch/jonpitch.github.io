@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Development Battle &mdash; Android vs. iOS &#45; Part 2&#58; Code
+tags: [android, ios, mobile]
 ---
 
 To communicate effectively, you have to know the language. Let's take a look at the native languages of both platforms at a very high level; For iOS: Objective-C/Swift and for Android: Java.

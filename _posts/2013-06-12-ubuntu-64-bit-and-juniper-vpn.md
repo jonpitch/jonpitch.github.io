@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ubuntu 64 bit and Juniper VPN
+tags: [misc, infrastructure]
 ---
 
 I've got 99 problems and installing the Juniper VPN in Ubuntu is all of them. If you have ever had that thought, then you're in the right spot.

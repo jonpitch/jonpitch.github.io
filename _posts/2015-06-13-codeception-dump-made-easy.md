@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Put Some Fiber in Your Dump
+tags: [codeception, devops, testing]
 ---
 
 First, if you're a software developer and not writing tests, please either start immediately or quit your job forever.

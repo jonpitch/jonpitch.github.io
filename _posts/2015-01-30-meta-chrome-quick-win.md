@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Using &lt;meta&gt; for a Quick Win
+tags: [misc, web-development]
 ---
 
 For websites and web applications, a minor detail that often goes overlooked is the use of the

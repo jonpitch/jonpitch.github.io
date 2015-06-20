@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Google Glass First Impressions
+tags: [products, misc]
 ---
 
-My interest in Google Glass was mostly for development, given its radically different experience and very interesting potential use cases. I was also very interested in the device from a societal standpoint in the sense that Glass is so new, people aren't fully aware of them yet like they are with mobile phones. 
+My interest in Google Glass was mostly for development, given its radically different experience and very interesting potential use cases. I was also very interested in the device from a societal standpoint in the sense that Glass is so new, people aren't fully aware of them yet like they are with mobile phones.
 
 There's a whole world of "Glass etiquette" that has yet to be established which I find fascinating. Nevertheless, I jumped at the opportunity to purchase a set recently when offered an invite from Google. I couldn't justify the cost (more on that in a bit), luckily my employer was willing to help out. Glass arrived recently and after about a day or so of use, I'm still interested.
 

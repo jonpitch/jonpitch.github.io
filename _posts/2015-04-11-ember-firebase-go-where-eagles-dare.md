@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ember &amp; Firebase&#58; Go Where Eagles Dare
+tags: [ember, firebase, web-development, javascript]
 ---
 
 At a recent [EmberJS Philly](http://www.meetup.com/EmberJS-Philly/) meetup, Brendan O'Hara ([&commat;BrendanOHara](https://twitter.com/BrendanOHara)) gave a great overview of [Ember](http://emberjs.com) and [Firebase](https://www.firebase.com/) (via [EmberFire](https://github.com/firebase/emberfire)). I thought the best takeaway from the talk was the following:

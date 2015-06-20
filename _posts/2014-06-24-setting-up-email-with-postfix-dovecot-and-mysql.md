@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setting Up Email with Postfix, Dovecot and MySQL
+tags: [misc, infrastructure]
 ---
 
 I had recently set up a Linode (which is awesome by the way) to handle the incoming and outgoing mail of a domain of mine. Linode actually has very good instructions on the subject, which can be found [here](https://library.linode.com/email/postfix/postfix2.9.6-dovecot2.0.19-mysql).

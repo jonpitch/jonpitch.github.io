@@ -401,7 +401,7 @@ body {
   font-size: small;
 }
 .post-list-item {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .post-list-item .text-muted {
   font-size: smaller;

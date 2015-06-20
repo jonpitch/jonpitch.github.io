@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Why Ember is the Cat's Pajamas
+tags: [ember, web-development, javascript]
 ---
 
 If you have recently blinked, it's likely that you have missed the plethora of web development tools, frameworks, etc. There is one in particular that has my full attention however, [Ember](http://emberjs.com/).

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Development Battle &mdash; Android vs. iOS &#45; Part 1&#58; Development Tools
+tags: [android, ios, mobile]
 ---
 
 Developers are vital to each platform's success, so let's compare the development tools available for each platform. I'll cover the pros and cons of each platform, based on my personal experience.

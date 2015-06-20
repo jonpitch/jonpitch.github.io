@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Building a Software Product&colon; Lessons Learned
+tags: [products]
 ---
 
 I spent a good portion of my spare time over the last few years working on a side project. For this particular project I formed an LLC, opened a bank account, existed on multiple social media platforms, had both an iOS and Android app and so forth. Now I can't wait to shut it all down.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Development Battle &mdash; Android vs. iOS
+tags: [android, ios, mobile]
 ---
 
 For the better part of 6 years, I have soley been an Android advocate, ignoring iOS at whatever cost. In the last few years, I have been working on a [side project](http://brausr.com) that I thought would benefit from being on both platforms. Over the next series of posts, I'm going to compare and contrast my experience building the same application on both platforms.

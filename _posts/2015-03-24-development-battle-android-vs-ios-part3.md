@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Development Battle &mdash; Android vs. iOS &#45; Part 3&#58; Testing &amp; Debugging
+tags: [android, ios, mobile]
 ---
 
 I'll be comparing my experiences with basic debugging across both platforms. What won't be included are automated testing frameworks or 3rd party tools.

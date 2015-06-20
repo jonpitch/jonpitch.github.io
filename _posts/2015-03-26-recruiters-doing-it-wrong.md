@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Recruiting Developers&#58; Your Pitch Is Bad And You Should Feel Bad
+tags: [misc]
 ---
 
 Recruiters have a tough job, especially when it comes to placing software developers. I would also imagine any sales/commission based job is a difficult one, because it's simply a skill that I'm just bad at. Having said that, recruiting software developers has become a miserable experience for all parties involved.

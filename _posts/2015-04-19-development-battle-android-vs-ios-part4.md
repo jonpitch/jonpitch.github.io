@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Development Battle &mdash; Android vs. iOS &#45; Part 4&#58; Deployments, Analytics &amp; Metrics
+tags: [android, ios, mobile]
 ---
 
 Let's take a look at the last mile of the mobile application process, deploying to users and post deployment.
