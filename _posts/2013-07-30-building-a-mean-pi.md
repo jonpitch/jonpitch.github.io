@@ -118,16 +118,16 @@ OUT=/home/pi/nodejs.log
 case "$1" in
 
 start)
-	echo "starting node: $NODE $SERVER_JS_FILE"
-	sudo -u $USER $NODE $SERVER_JS_FILE &gt; $OUT 2&gt;$OUT &amp;
-	;;
+  echo "starting node: $NODE $SERVER_JS_FILE"
+  sudo -u $USER $NODE $SERVER_JS_FILE > $OUT > $OUT &
+  ;;
 
 stop)
-	killall $NODE
-	;;
+  killall $NODE
+  ;;
 
 *)
-	echo "usage: $0 (start|stop)"
+  echo "usage: $0 (start|stop)"
 esac
 
 exit 0{% endhighlight %}
