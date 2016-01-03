@@ -30,13 +30,7 @@ social:
   linkedin:       'jonpitcherella'
   github:         'jonpitch'
   stackoverflow:  'users/349138/jon'
-
-# Brausr
-brausr:
-  twitter:        'brausr'
-  googleplus:     '+Brausr'
-  facebook:       'brausr'
-  url:            'http://brausr.com'
+  medium:         '@jonpitch'
 
 # Google Analytics
 ga:
