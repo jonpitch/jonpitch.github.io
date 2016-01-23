@@ -12,8 +12,7 @@ tagline:          'Developer. Home Brewer.'
 description:      'Great developer.<br />Home brewer and metal head.<br />User of haiku.'
 url:              http://jonpitcherella.com
 baseurl:          /
-header-img:       'public/img/splash.jpg'
-brand-color:      '#455A64'
+brand-color:      '#6a9fb5'
 
 author:
   name:           'Jon Pitcherella'
@@ -30,7 +29,7 @@ social:
   linkedin:       'jonpitcherella'
   github:         'jonpitch'
   stackoverflow:  'users/349138/jon'
-  medium:         '@jonpitch'
+  medium:         'jonpitch'
 
 # Google Analytics
 ga:
@@ -41,4 +40,4 @@ disqus:
   shortname:      'jonpitcherella'
 
 # Build Settings
-exclude: ['less', 'node_modules', 'Gruntfile.js', 'package.json', 'README.md']
+exclude: ['README.md']

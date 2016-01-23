@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Put Some Fiber in Your Dump
+medium: https://medium.com/@jonpitch/put-some-fiber-in-your-dump-b15d9c9283fa
 tags: [codeception, devops, testing]
 ---
 
@@ -31,169 +32,169 @@ Here's what this looks like in code. Note, this is [Laravel](http://laravel.com/
 {% highlight php startinline=true %}
 class MySuperSweetExtension extends \Codeception\Platform\Extension
 {
-	// listen to these events
-	public static $events = array(
-		'suite.before' => 'beforeSuite',
-		'suite.after' => 'afterSuite',
-	);
+  // listen to these events
+  public static $events = array(
+    'suite.before' => 'beforeSuite',
+    'suite.after' => 'afterSuite',
+  );
 
-	private $_backup;
-	private $_backupPath;
-	private $_host;
-	private $_login;
-	private $_database;
+  private $_backup;
+  private $_backupPath;
+  private $_host;
+  private $_login;
+  private $_database;
 
-	// the Codeception Db module
-	private $_db;
+  // the Codeception Db module
+  private $_db;
 
-	public function beforeSuite(\Codeception\Event\SuiteEvent $e)
-	{
-		// read config
-		$this->_backup = $this->config['backup'];
-		$this->_backupPath = $this->config['backup_path'];
-		$this->_host = $this->config['host'];
-		$this->_login = $this->config['login'];
-		$this->_database = $this->config['database'];
+  public function beforeSuite(\Codeception\Event\SuiteEvent $e)
+  {
+    // read config
+    $this->_backup = $this->config['backup'];
+    $this->_backupPath = $this->config['backup_path'];
+    $this->_host = $this->config['host'];
+    $this->_login = $this->config['login'];
+    $this->_database = $this->config['database'];
 
-		// get the db module
-	    try {
-	      $this->_db = $this->getModule('Db');
-	    } catch (\Exception $e) {
-	      return;
-	    }
+    // get the db module
+      try {
+        $this->_db = $this->getModule('Db');
+      } catch (\Exception $e) {
+        return;
+      }
 
-		// back up local database if enabled
-		if ($this->_backup) {
-			$this->backup();
-		}
+    // back up local database if enabled
+    if ($this->_backup) {
+      $this->backup();
+    }
 
-		// start from scratch
-		$this->localRestore();
+    // start from scratch
+    $this->localRestore();
 
-		// run migrations
-		$this->migrate();
+    // run migrations
+    $this->migrate();
 
-		// run seeder(s)
-		$this->seed();
+    // run seeder(s)
+    $this->seed();
 
-		// create Codeception dump
-		$this->dump();
+    // create Codeception dump
+    $this->dump();
 
-		// update Codeception to populate the database
-		$this->updateDbModule();
-	}
+    // update Codeception to populate the database
+    $this->updateDbModule();
+  }
 
-	public function afterSuite(\Codeception\Event\SuiteEvent $e)
-	{
-		// read config
-		$this->_backup = $this->config['backup'];
-		$this->_backupPath = $this->config['backup_path'];
+  public function afterSuite(\Codeception\Event\SuiteEvent $e)
+  {
+    // read config
+    $this->_backup = $this->config['backup'];
+    $this->_backupPath = $this->config['backup_path'];
 
-		if ($this->_backup) {
-			$this->restore();
-		}
-	}
+    if ($this->_backup) {
+      $this->restore();
+    }
+  }
 
-	// Create a binary back up of the local database.
-	private function backup()
-	{
-		$this->writeln('Backing up your local database to: ' . $this->_backupPath . '...');
+  // Create a binary back up of the local database.
+  private function backup()
+  {
+    $this->writeln('Backing up your local database to: ' . $this->_backupPath . '...');
 
-		// use pg_dump to create binary backup
-		$command = sprintf('pg_dump -h %s -U %s -d %s -F t --file %s',
-			$this->_host,
-			$this->_login,
-			$this->_database,
-			$this->_backupPath);
+    // use pg_dump to create binary backup
+    $command = sprintf('pg_dump -h %s -U %s -d %s -F t --file %s',
+      $this->_host,
+      $this->_login,
+      $this->_database,
+      $this->_backupPath);
 
-		exec($command);
+    exec($command);
 
-		$this->writeln('Done.');
-	}
+    $this->writeln('Done.');
+  }
 
-	// Let Codeception restore the database from base.sql
-	private function localRestore()
-	{
-		$this->writeln('Restoring local database from base...');
+  // Let Codeception restore the database from base.sql
+  private function localRestore()
+  {
+    $this->writeln('Restoring local database from base...');
 
-		$this->_db->_reconfigure(array('populate' => true));
-		$this->_db->_initialize();
+    $this->_db->_reconfigure(array('populate' => true));
+    $this->_db->_initialize();
 
-		$this->writeln('Done.');
-	}
+    $this->writeln('Done.');
+  }
 
-	// Restore local database from a binary backup.
-	private function restore()
-	{
-		// get the db module - not needed but will prevent restore for
-		// suites that don't use Db
-	    try {
-	      $this->_db = $this->getModule('Db');
-	    } catch (\Exception $e) {
-	      return;
-	    }
+  // Restore local database from a binary backup.
+  private function restore()
+  {
+    // get the db module - not needed but will prevent restore for
+    // suites that don't use Db
+      try {
+        $this->_db = $this->getModule('Db');
+      } catch (\Exception $e) {
+        return;
+      }
 
-		$this->writeln('Restoring your database from backup...');
+    $this->writeln('Restoring your database from backup...');
 
-		// use pg_restore to restore from our binary backup
-		$command = sprintf('pg_restore -h %s -U %s -d %s -c %s',
-			$this->_host,
-			'postgres',
-			$this->_database,
-			$this->_backupPath);
+    // use pg_restore to restore from our binary backup
+    $command = sprintf('pg_restore -h %s -U %s -d %s -c %s',
+      $this->_host,
+      'postgres',
+      $this->_database,
+      $this->_backupPath);
 
-		exec($command);
+    exec($command);
 
-		$this->writeln('Done.');
-	}
+    $this->writeln('Done.');
+  }
 
-	// Run all migrations against fresh database.
-	private function migrate()
-	{
-		$this->writeln('Running migrations...');
+  // Run all migrations against fresh database.
+  private function migrate()
+  {
+    $this->writeln('Running migrations...');
 
-		$command = 'php artisan migrate';
-		exec($command);
+    $command = 'php artisan migrate';
+    exec($command);
 
-		$this->writeln('Done.');
-	}
+    $this->writeln('Done.');
+  }
 
-	// Run all seeders against newly created database.
-	private function seed()
-	{
-		$this->writeln('Seeding database...');
+  // Run all seeders against newly created database.
+  private function seed()
+  {
+    $this->writeln('Seeding database...');
 
-		$command = 'php artisan db:seed';
-		exec($command);
+    $command = 'php artisan db:seed';
+    exec($command);
 
-		$this->writeln('Done.');
-	}
+    $this->writeln('Done.');
+  }
 
-	// Create a dump file for the Codeception Db module.
-	private function dump()
-	{
-		$this->writeln('Creating codeception dump...');
+  // Create a dump file for the Codeception Db module.
+  private function dump()
+  {
+    $this->writeln('Creating codeception dump...');
 
-		$command = sprintf('pg_dump -h %s -U %s -d %s > tests/_data/dump.sql',
-			$this->_host,
-			$this->_login,
-			$this->_database);
+    $command = sprintf('pg_dump -h %s -U %s -d %s > tests/_data/dump.sql',
+      $this->_host,
+      $this->_login,
+      $this->_database);
 
-		exec($command);
+    exec($command);
 
-		$this->writeln('Done.');
-	}
+    $this->writeln('Done.');
+  }
 
-	// Re-configure the Db module to ensure we populate from the dump file.
-	private function updateDbModule()
-	{
-		$this->writeln('Re-configuring Codeception Db module...');
+  // Re-configure the Db module to ensure we populate from the dump file.
+  private function updateDbModule()
+  {
+    $this->writeln('Re-configuring Codeception Db module...');
 
-		$this->_db->_reconfigure(array('dump' => 'tests/_data/dump.sql'));
-		$this->_db->_initialize();
+    $this->_db->_reconfigure(array('dump' => 'tests/_data/dump.sql'));
+    $this->_db->_initialize();
 
-		$this->writeln('Done.');
-	}
+    $this->writeln('Done.');
+  }
 }
 {% endhighlight %}
 

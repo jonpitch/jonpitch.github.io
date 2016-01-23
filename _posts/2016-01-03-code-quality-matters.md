@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Code Quality Matters
-tags: [web-development, devops, testing]
+medium: https://medium.com/@jonpitch/code-quality-matters-4a7384f30f0e
+tags: [web-development, devops, testing, medium]
 ---
 
 Maintaining software, especially when you are not the original author, is the worst. How many times have you looked at brutal code and your first thought was, "Why don't I just re-write this?" Of course, this thought is detrimental to your time, your perception of a codebase and potentially to your team. Here are some tips to maintain code quality over time.

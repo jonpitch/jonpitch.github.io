@@ -1,0 +1,25 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+em.meta {
+  display: block;
+  color: #c7c7c7;
+}
+
+article {
+  margin-top: 2rem;
+}
+
+<!-- sidebar overrides -->
+.sidebar-about h1 {
+  font-size: 3rem;
+}
+
+.sidebar-nav-item > i {
+  margin-right: 1rem;
+}
+
+p.lead {
+  font-size: 1rem;
+}

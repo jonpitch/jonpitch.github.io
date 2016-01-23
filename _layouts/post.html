@@ -4,7 +4,8 @@ layout: default
 
 {% assign post = page %}
 {% if post.tags.size > 0 %}
-    {% capture tags_content %}Posted with {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
+    {% capture tags_content %}
+    {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %} {% endcapture %}
     {% for post_tag in post.tags %}
         {% for data_tag in site.data.tags %}
             {% if data_tag.slug == post_tag %}
@@ -21,71 +22,39 @@ layout: default
 {% endif %}
 
 <!-- Post Header -->
-<header class="intro-header" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>{{ page.title }}</h1>
-                    {% if page.subtitle %}
-                    <h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% endif %}
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
-                </div>
-            </div>
-        </div>
-    </div>
+<header>
+  <div class="post-heading">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <h2>{{ page.subtitle }}</h2>
+    {% endif %}
+    <em class="meta">
+      {% if page.medium %}
+        <a href="{{page.medium}}"><i class="fa fa-medium"></i></a>
+      {% endif %}
+      Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}
+    </em>
+  </div>
 </header>
 
 <!-- Post Content -->
 <article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-				{{ content }}
-
-                <hr>
-
-                <p id="post-meta">{{ tags_content }}</p>
-
-                <hr>
-
-                <div class="pager-meta">
-                    <a href="/blog">View All Posts</a>
-                </div>
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
-
-            </div>
-        </div>
-        <div class="row" style="margin-top:50px;">
-            <div class="col-lg-12">
-                <!-- Disqus -->
-                <div id="disqus_thread"></div>
-                    <script type="text/javascript">
-                        var disqus_shortname = '{{ site.disqus.shortname }}';
-                        (function() {
-                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                        })();
-                        </script>
-                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                </div>
-            </div>
-        </div>
-    </div>
+  {{ content }}
+  <hr />
+  <p>{{ tags_content }}</p>
+  <hr />
 </article>
 
-<hr>
+<!-- Disqus -->
+<div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = '{{ site.disqus.shortname }}';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>

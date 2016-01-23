@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Ember&colon; Get More Done
-tags: [web-development, devops, ember, javascript]
+medium: https://medium.com/@jonpitch/ember-get-shit-done-36383c2ccc53
+tags: [web-development, devops, ember, javascript, medium]
 ---
 
 [Ember](http://emberjs.com/) often gets lost amidst talks of other frameworks and tools like Angular, React, etc. and I think that's incredibly unfortunate. Because of Ember, I'm the most productive I have been in years and building some of the best software I have ever written. It's not that Ember is fundamentally better than other frameworks (*but it is...*), it's that Ember makes decisions for me, it makes my workflow far less complicated, levels the playing field and gives me more time to spend building awesome software.
