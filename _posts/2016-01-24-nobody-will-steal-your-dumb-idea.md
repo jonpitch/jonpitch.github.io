@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Nobody is Going to Steal Your Dumb Idea
+medium: https://medium.com/@jonpitch/nobody-is-going-to-steal-your-dumb-idea-3e85c8d66e44
 tags: [humor, misc, products, medium]
 ---
 
