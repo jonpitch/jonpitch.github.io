@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Ember Theming
-tags: [web-development, ember, javascript]
+medium: https://medium.com/@jonpitch/ember-theming-97e9562084c7
+tags: [web-development, ember, javascript, medium]
 ---
 
 ## Intro
