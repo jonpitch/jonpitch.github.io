@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Write Better Ember Tests
+medium: https://medium.com/@jonpitch/write-better-ember-tests-d2e22fb76bf2
 tags: [web-development, ember, javascript, testing]
 ---
 
@@ -25,23 +26,23 @@ By default, Ember uses [QUnit](http://qunitjs.com/) under the hood. There are tw
 
 * Test Name
 
-{% gist jonpitch/eb3bed80fb5f9031dd9cc5c7519e5ee9 test-name.js %}
+{% gist jonpitch/fbfb8eb18c02f85843900da197ed8206 test-name.js %}
 
 * Assertion Message
 
-{% gist jonpitch/eb3bed80fb5f9031dd9cc5c7519e5ee9 assertion-message.js %}
+{% gist jonpitch/7d9727910838af52bfafdfa2a8533587 assertion-message.js %}
 
 ## Page Object
 
 The [Page Object Design pattern](http://martinfowler.com/bliki/PageObject.html) is a powerful one for writing re-usable, easy to understand tests. Here's an example:
 
-{% gist jonpitch/6e3259b377cb0f9a27d6950a84203640 basic-page-object.js %}
+{% gist jonpitch/a4b76e258d0a03d58437898727c7313b basic-page-object.js %}
 
 In this trivial example, the first test demonstrates a problem where as you start to add more tests, you will end up writing the same selectors multiple times. In the second test, it should be clear that the `page` variable could be refactored and re-used across tests. Now all of your tests reference `page.$button`; One change to the page object now updates all of your tests using it.
 
 An even better approach would be to leverage the [ember-cli-page-object](http://ember-cli-page-object.js.org/docs/v1.4.x/) addon:
 
-{% gist jonpitch/6e3259b377cb0f9a27d6950a84203640 ember-page.js %}
+{% gist jonpitch/fd8e3e8152652291f0b064a76303e3de ember-page.js %}
 
 In this example, we setup a `page` object which has all the parts of the page we care about, similar to the examples prior. With `ember-cli-page-object`, tests become much easier to reason because our assertions become almost human readable: `page.button.isVisible` could be understood by non-developers. `ember-cli-page-object` also makes writing tests faster for developers. Tests can be quickly read and understood without having to recall which jQuery selector to use to find your element.
 
@@ -83,3 +84,5 @@ This is recommended by Mirage and can be found in their documentation [here](htt
 Are you using a CI tool? You should be. There are [a lot of options](https://xebialabs.com/the-ultimate-devops-tool-chest/continuous-integration/) out there. A popular option, [Travis](https://travis-ci.org/), is free for open source projects. As application complexity increases, or the number of developers increases, it becomes pretty difficult for any one person to know everything. Writing lots of good tests and having them pass before integrating new code is important for the sanity of the team and it helps build confidence in the application's stability over time. Find a bug? No worries, write a test that reproduces it, fix the bug and never worry about it again.
 
 Make no mistake, tests can be challenging. They often involve the same amount, or more code than your application. And no matter how easy it is to write tests, they still take time, which could be time spent writing more features or fixing bugs. The real key to writing good tests is understanding their worth. Your time is the most valuable asset you have. Don't waste it by debugging things a simple test would have caught.
+
+Have some tips of your own? I'd love to hear them.
