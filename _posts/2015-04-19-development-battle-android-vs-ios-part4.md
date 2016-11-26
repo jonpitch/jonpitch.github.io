@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Development Battle &mdash; Android vs. iOS &#45; Part 4&#58; Deployments, Analytics &amp; Metrics
+title: "Development Battle &mdash; Android vs. iOS &#45; Part 4&#58; Deployments, Analytics &amp; Metrics"
+description: "Developing the same app for Android and iOS: Analytics"
 tags: [android, ios, mobile]
 ---
 

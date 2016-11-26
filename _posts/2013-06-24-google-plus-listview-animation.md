@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Google Plus ListView Animation
+title: "Google Plus ListView Animation"
+description: "Animating an Android ListView like Google+"
 tags: [android, mobile]
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Development Battle &mdash; Android vs. iOS
+title: "Development Battle &mdash; Android vs. iOS"
+description: "My experience with developing the same application for iOS and Android"
 tags: [android, ios, mobile]
 ---
 

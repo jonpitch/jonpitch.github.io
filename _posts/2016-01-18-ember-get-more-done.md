@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Ember&colon; Get More Done
+title: "Ember&colon; Get More Done"
+description: "Convention over configuration is why Ember wins hearts and minds"
 medium: https://medium.com/@jonpitch/ember-get-shit-done-36383c2ccc53
 tags: [web-development, devops, ember, javascript, medium]
 ---

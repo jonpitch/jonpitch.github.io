@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Using &lt;meta&gt; for a Quick Win
+title: "Using &lt;meta&gt; for a Quick Win"
+description: "Using the theme-color meta tag for your progressive web application"
 tags: [misc, web-development]
 ---
 
@@ -14,5 +15,5 @@ By simply adding the following meta tag to the head of your page:
 
 For a trivial amount of effort, there's a very nice benefit for Chrome v39+ for Android:
 
-<img src="/public/img/posts/20150130/1.png" alt="Recents View" style="display:inline;" />
-<img src="/public/img/posts/20150130/2.png" alt="Web View" style="display:inline;" />
+{% img posts/20150130/1@2x.png alt:'Recents View' %}
+{% img posts/20150130/2@2x.png alt:'Web View' %}

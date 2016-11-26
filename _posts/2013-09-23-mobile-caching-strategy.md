@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Mobile Caching Strategy
+title: "Mobile Caching Strategy"
+description: "Some thoughts around caching strategies for mobile applications"
 tags: [mobile]
 ---
 
