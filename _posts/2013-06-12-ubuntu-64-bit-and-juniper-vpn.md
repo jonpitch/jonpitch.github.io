@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Ubuntu 64 bit and Juniper VPN
+title: "Ubuntu 64 bit and Juniper VPN"
+description: ""
 tags: [misc, infrastructure]
 ---
 

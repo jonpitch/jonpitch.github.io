@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Mobile Caching Strategy
+title: "Mobile Caching Strategy"
+description: ""
 tags: [mobile]
 ---
 

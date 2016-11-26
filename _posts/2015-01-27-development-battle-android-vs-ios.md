@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Development Battle &mdash; Android vs. iOS
+title: "Development Battle &mdash; Android vs. iOS"
+description: ""
 tags: [android, ios, mobile]
 ---
 

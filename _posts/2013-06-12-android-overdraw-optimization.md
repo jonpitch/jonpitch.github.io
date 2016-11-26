@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Android Overdraw Optimization
+title: "Android Overdraw Optimization"
+description: ""
 tags: [android, mobile]
 ---
 

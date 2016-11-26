@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Ember&colon; Get More Done
+title: "Ember&colon; Get More Done"
+description: ""
 medium: https://medium.com/@jonpitch/ember-get-shit-done-36383c2ccc53
 tags: [web-development, devops, ember, javascript, medium]
 ---

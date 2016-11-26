@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Google Plus ListView Animation
+title: "Google Plus ListView Animation"
+description: ""
 tags: [android, mobile]
 ---
 

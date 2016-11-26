@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Building a Software Product&colon; Lessons Learned
+title: "Building a Software Product&colon; Lessons Learned"
+description: ""
 medium: https://medium.com/@jonpitch/building-a-software-product-colon-lessons-learned-2d4e61cea6ea
 tags: [products, medium]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Building a MEAN Pi
+title: "Building a MEAN Pi"
+description: ""
 tags: [web-development, javascript, raspberry-pi]
 ---
 

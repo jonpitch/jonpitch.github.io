@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Why Ember is the Cat's Pajamas
+title: "Why Ember is the Cat's Pajamas"
+description: ""
 tags: [ember, web-development, javascript]
 ---
 

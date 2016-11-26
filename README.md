@@ -1,9 +1,10 @@
-# jonpitch.github.io
-My personal website
+## jonpitch.github.io
+my personal website
 
-# Running locally
-* git clone
-* cd /path/to/repository
-* npm install
-* grunt
-* jekyll serve
+## running locally
+* `brew install ruby`
+* `bin/setup`
+* `bundle exec jekyll serve`
+
+### attribution
+* [Chalk](https://github.com/nielsenramon/chalk)

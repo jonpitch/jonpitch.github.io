@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Development Battle &mdash; Android vs. iOS &#45; Part 3&#58; Testing &amp; Debugging
+title: "Development Battle &mdash; Android vs. iOS &#45; Part 3&#58; Testing &amp; Debugging"
+description: ""
 tags: [android, ios, mobile]
 ---
 
