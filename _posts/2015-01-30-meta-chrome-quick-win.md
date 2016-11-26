@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using &lt;meta&gt; for a Quick Win"
-description: ""
+description: "Using the theme-color meta tag for your progressive web application"
 tags: [misc, web-development]
 ---
 

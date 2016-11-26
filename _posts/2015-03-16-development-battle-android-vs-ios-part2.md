@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Development Battle &mdash; Android vs. iOS &#45; Part 2&#58; Code"
-description: ""
+description: "Developing the same app for Android and iOS: Code"
 tags: [android, ios, mobile]
 ---
 

@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Building a MEAN Pi"
-description: ""
+description: "Setting up a Raspberry Pi with Mongo, Express, Angular and Node."
 tags: [web-development, javascript, raspberry-pi]
 ---
+
+_**UPDATE: This guide is now several years old and many of it may no longer be necessary or even remotely up to date.**_
 
 If JavaScript isn't your thing, turn back now because we're going to be implementing the MEAN stack on a Raspberry Pi. The MEAN stack (MongoDB, Express, AngularJS and NodeJS) is a web stack based entirely in JavaScript.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Put Some Fiber in Your Dump"
-description: ""
+description: "Accelerate Codeception test speed"
 medium: https://medium.com/@jonpitch/put-some-fiber-in-your-dump-b15d9c9283fa
 tags: [codeception, devops, testing]
 ---

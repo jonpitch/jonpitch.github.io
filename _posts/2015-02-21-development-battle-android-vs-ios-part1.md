@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Development Battle &mdash; Android vs. iOS &#45; Part 1&#58; Development Tools"
-description: ""
+description: "Developing the same app for Android and iOS: Tools"
 tags: [android, ios, mobile]
 ---
 

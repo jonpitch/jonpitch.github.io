@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Codeception Acceptance Tests - Using Multiple Databases"
-description: ""
+description: "Using multiple databases with Codeception"
 tags: [codeception, testing]
 ---
 

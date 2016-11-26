@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ember Theming"
-description: ""
+description: "Here is how you could implement a theme service in an Ember application"
 medium: https://medium.com/@jonpitch/ember-theming-97e9562084c7
 tags: [web-development, ember, javascript, medium]
 ---

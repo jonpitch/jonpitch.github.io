@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building a Software Product&colon; Lessons Learned"
-description: ""
+description: "Some thoughts around why building good products is so difficult"
 medium: https://medium.com/@jonpitch/building-a-software-product-colon-lessons-learned-2d4e61cea6ea
 tags: [products, medium]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Android Overdraw Optimization"
-description: ""
+description: "A simple way to debug Overdraw"
 tags: [android, mobile]
 ---
 
