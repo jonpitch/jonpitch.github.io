@@ -1,0 +1,50 @@
+- slug: codeception
+  name: Codeception
+
+- slug: devops
+  name: DevOps
+
+- slug: testing
+  name: Testing
+
+- slug: products
+  name: Products
+
+- slug: android
+  name: Android
+
+- slug: ios
+  name: iOS
+
+- slug: mobile
+  name: Mobile
+
+- slug: ember
+  name: Ember
+
+- slug: firebase
+  name: Firebase
+
+- slug: web-development
+  name: Web Development
+
+- slug: misc
+  name: Miscellaneous
+
+- slug: infrastructure
+  name: Infrastructure
+
+- slug: javascript
+  name: JavaScript
+
+- slug: raspberry-pi
+  name: Raspberry Pi
+
+- slug: medium
+  name: Medium
+
+- slug: humor
+  name: Humor
+
+- slug: localization
+  name: Localization

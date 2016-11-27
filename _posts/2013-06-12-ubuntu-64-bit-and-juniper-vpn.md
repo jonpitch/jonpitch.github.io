@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Ubuntu 64 bit and Juniper VPN"
-description: "Setting up a Juniper VPN connection on 64 bit Ubuntu"
+title: Ubuntu 64 bit and Juniper VPN
 tags: [misc, infrastructure]
 ---
 

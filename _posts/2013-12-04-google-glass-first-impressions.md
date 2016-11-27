@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Google Glass First Impressions"
-description: "My first impressions of using Google Glass"
+title: Google Glass First Impressions
 tags: [products, misc]
 ---
 

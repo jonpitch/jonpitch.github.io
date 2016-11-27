@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Recruiting Developers&#58; Your Pitch Is Bad And You Should Feel Bad"
-description: "Recruiter developers is an awful experience for all involved, here's why"
+title: Recruiting Developers&#58; Your Pitch Is Bad And You Should Feel Bad
 medium: https://medium.com/@jonpitch/recruiting-developers-b8114cec6c54
 tags: [misc, medium]
 ---

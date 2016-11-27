@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Ember &amp; Firebase&#58; Go Where Eagles Dare"
-description: "Using Ember and Firebase together for maximum awesomeness"
+title: Ember &amp; Firebase&#58; Go Where Eagles Dare
 medium: https://medium.com/@jonpitch/ember-amp-firebase-58-go-where-eagles-dare-a76b08add035
 tags: [ember, firebase, web-development, javascript, medium]
 ---

@@ -1,80 +1,63 @@
-<!doctype html>
-<html lang="en">
-{% include head.html %}
-<body>
-  <main role="main">
-    <div class="grid grid-centered">
-      <div class="grid-cell">
-        {% include navigation.html %}
-        <article class="article reveal">
-          <header class="article-header">
-            <h1>{{ page.title }}</h1>
-            <p>{{ page.description }}</p>
-            <div class="article-list-footer">
-              <span class="article-list-date">
-                {{ page.date | date: "%B %-d, %Y" }}
-              </span>
-              <span class="article-list-divider">-</span>
-              <span class="article-list-minutes">
-                {% capture words %}
-                  {{ page.content | number_of_words }}
-                {% endcapture %}
-                {% unless words contains "-" %}
-                  {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
-                {% endunless %}
-              </span>
-              <span class="article-list-divider">-</span>
-              <div class="article-list-tags">
-                {% for tag in page.tags %}
-                  <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag }}</a>
-                {% endfor %}
-              </div>
-            </div>
-            <div>
-              {% if page.medium %}
-                <span class="article-on-medium">
-                  <a href="{{ page.medium }}" target="_blank" title="Medium">
-                    <span class="icon icon-link"></span>
-                  </a>
-                <span>
-              {% endif %}
-            </div>
-          </header>
+---
+layout: default
+---
 
-          <div class="article-content">
-            {{ content }}
-          </div>
+{% assign post = page %}
+{% if post.tags.size > 0 %}
+    {% capture tags_content %}
+    {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %} {% endcapture %}
+    {% for post_tag in post.tags %}
+        {% for data_tag in site.data.tags %}
+            {% if data_tag.slug == post_tag %}
+                {% assign tag = data_tag %}
+            {% endif %}
+        {% endfor %}
+        {% if tag %}
+            {% capture tags_content_temp %}{{ tags_content }}<a href="/blog/tag/{{ tag.slug }}/">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+            {% assign tags_content = tags_content_temp %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+    {% assign tags_content = '' %}
+{% endif %}
 
-          <div class="article-share">
-            {% assign page_title = page.title  | truncate '110' %}
-            <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status={{ page_title }} - {{ page.url | absolute_url }} {% if site.social.twitter %}by @{{ site.social.twitter }}{% endif %}', 'newwindow', 'width=500, height=225'); return false;">
-              <span class="icon icon-social-twitter"></span>
-            </a>
-            <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}', 'newwindow', 'width=500, height=500'); return false;">
-              <span class="icon icon-social-facebook"></span>
-            </a>
-            <a href="" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url={{ page.url | absolute_url }}', 'newwindow', 'width=550, height=400'); return false;">
-              <span class="icon icon-social-googleplus"></span>
-            </a>
-          </div>
+<!-- Post Header -->
+<header>
+  <div class="post-heading">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <h2>{{ page.subtitle }}</h2>
+    {% endif %}
+    <em class="meta">
+      {% if page.medium %}
+        <a href="{{page.medium}}"><i class="fa fa-medium"></i></a>
+      {% endif %}
+      {% if page.ember-way %}
+        <a href="{{page.ember-way}}"><i class="fa fa-fire"></i></a>
+      {% endif %}
+      Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}
+    </em>
+  </div>
+</header>
 
-          {% if site.discus_identifier %}
-            <div id="disqus_thread" class="article-comments"></div>
-            <script>
-              (function () {
-                var d = document; var s = d.createElement('script');
-                s.src = '//{{ site.discus_identifier }}.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-              })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-          {% endif %}
-        </article>
-        {% include footer.html %}
-      </div>
-    </div>
-  </main>
-  {% include javascripts.html %}
-</body>
-</html>
+<!-- Post Content -->
+<article>
+  {{ content }}
+  <hr />
+  <p>{{ tags_content }}</p>
+  <hr />
+</article>
+
+<!-- Disqus -->
+<div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = '{{ site.disqus.shortname }}';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>

@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Code Quality Matters"
-description: "Thoughts on why the quality of your code is important"
+title: Code Quality Matters
 medium: https://medium.com/@jonpitch/code-quality-matters-4a7384f30f0e
 tags: [web-development, devops, testing, medium]
 ---

@@ -1,4 +1,0 @@
----
-slug: devops
-name: DevOps
----

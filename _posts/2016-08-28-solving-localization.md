@@ -1,9 +1,7 @@
 ---
 layout: post
-title: "Localization Is Hard&#58; Here's How We Solved It"
-description: "Some tips on how to approach solving web application localization"
-medium: https://medium.com/@jonpitch/localization-is-hard-heres-how-we-solved-it-52dad61bfce3
-tags: [web-development, localization, products, medium]
+title: Localization Is Hard&#58; Here's How We Solved It
+tags: [web-development, localization, products]
 ---
 
 ## Why It's Hard

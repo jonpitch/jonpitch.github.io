@@ -1,4 +1,0 @@
----
-slug: medium
-name: Medium
----

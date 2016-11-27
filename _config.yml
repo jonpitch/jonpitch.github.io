@@ -1,55 +1,42 @@
-name: Jon Pitcherella
-paginate: 5
-paginate_path: "/posts/page/:num/"
-url: http://jonpitcherella.com
-blog_theme: dark
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
 
-discus_identifier: jonpitcherella
-ga_analytics: UA-33882544-1
-rss_enabled: true
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Jon Pitcherella
+tagline:          'Developer. Home Brewer.'
+description:      'Great developer.<br />Home brewer and metal head.<br />User of haiku.'
+url:              http://jonpitcherella.com
+baseurl:          /
+brand-color:      '#6a9fb5'
+
+author:
+  name:           'Jon Pitcherella'
+  url:            http://jonpitcherella.com
+
+paginate:         5
+
+# Social
 social:
-  github: jonpitch
-  linkedin: jonpitcherella
-  twitter: jonpitch
-  email: jon.pitcherella@gmail.com
+  email:          'jon.pitcherella@gmail.com'
+  googleplus:     '+JonPitcherella'
+  twitter:        'jonpitch'
+  facebook:       'jon.pitcherella'
+  linkedin:       'jonpitcherella'
+  github:         'jonpitch'
+  stackoverflow:  'users/349138/jon'
+  medium:         'jonpitch'
 
-assets:
-  compress:
-    css: true
-    js: true
-  features:
-    automatic_img_size: false
-  sources:
-    - _assets/bower
-    - _assets/fonts
-    - _assets/images
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _vendor/
-collections:
-  my_tags:
-    output: true
-    permalink: /tag/:slug/
-defaults:
-  -
-    scope:
-      path: ""
-      type: my_tags
-    values:
-      layout: articles_by_tag
-exclude:
-  - .bowerrc
-  - .travis.yml
-  - bin/*
-  - bower.json
-  - circle.yml
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - vendor/
-gems:
-  - jekyll-assets
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-permalink: posts/:slug
+# Google Analytics
+ga:
+  id:             'UA-33882544-1'
+
+# Disqus
+disqus:
+  shortname:      'jonpitcherella'
+
+# Build Settings
+exclude: ['README.md']

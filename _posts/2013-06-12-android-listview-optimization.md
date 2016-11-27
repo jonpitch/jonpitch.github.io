@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Android ListView Optimization"
-description: "An overview of an Android ListView optimization"
+title: Android ListView Optimization
 tags: [android, mobile]
 ---
 

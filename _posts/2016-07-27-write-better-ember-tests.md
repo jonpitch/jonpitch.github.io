@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Write Better Ember Tests"
-description: "Some thoughts on how to write better Ember tests"
+title: Write Better Ember Tests
 medium: https://medium.com/@jonpitch/write-better-ember-tests-d2e22fb76bf2
 tags: [web-development, ember, javascript, testing, medium]
 ---

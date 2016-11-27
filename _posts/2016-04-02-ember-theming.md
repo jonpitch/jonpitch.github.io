@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Ember Theming"
-description: "Here is how you could implement a theme service in an Ember application"
+title: Ember Theming
 medium: https://medium.com/@jonpitch/ember-theming-97e9562084c7
 tags: [web-development, ember, javascript, medium]
 ---
@@ -89,6 +88,6 @@ If you thought this was interesting, found a way to make it better or wound up d
 
 Here's an example of theme switching in action:
 
-{% img posts/20160402/ember-theming@2x.gif alt:'Ember Theming' %}
+![Ember Theming](/public/img/posts/20160402/ember-theming.gif "Ember Theming")
 
 You can view the full gist [here](https://gist.github.com/jonpitch/655194358902cf3a0c05647dc1aca6a0).

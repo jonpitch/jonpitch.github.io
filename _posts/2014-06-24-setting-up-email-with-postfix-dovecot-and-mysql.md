@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Setting Up Email with Postfix, Dovecot and MySQL"
-description: "How to setup an email server on an empty Linode instance"
+title: Setting Up Email with Postfix, Dovecot and MySQL
 tags: [misc, infrastructure]
 ---
 

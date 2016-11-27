@@ -1,4 +1,0 @@
----
-slug: codeception
-name: Codeception
----

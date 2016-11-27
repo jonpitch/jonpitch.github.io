@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Why Ember is the Cat's Pajamas"
-description: "Why I think EmberJS is awesome"
+title: Why Ember is the Cat's Pajamas
 tags: [ember, web-development, javascript]
 ---
 

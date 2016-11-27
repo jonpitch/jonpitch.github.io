@@ -1,4 +1,0 @@
----
-slug: ember
-name: Ember
----

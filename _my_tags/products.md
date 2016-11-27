@@ -1,4 +1,0 @@
----
-slug: products
-name: Products
----
