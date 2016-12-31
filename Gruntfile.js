@@ -8,8 +8,7 @@ module.exports = function(grunt) {
         src: [
           'public/css/poole.css',
           'public/css/hyde.css',
-          'public/css/syntax.css',
-          'public/css/jonpitcherella.css'
+          'public/css/syntax.css'
         ],
         dest: 'public/css/site.css'
       }
