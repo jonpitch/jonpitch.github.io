@@ -2,22 +2,14 @@
 layout: default
 ---
 
-<header>
-  <h1>Tag: <code>{{ page.tag }}</code></h1>
-  <em class="meta">All posts tagged with {{ page.tag }}</em>
-</header>
+<h1>Tag: <code>{{ page.tag }}</code></h1>
+<p><em>All posts tagged with {{ page.tag }}</em></p>
 
-<article>
-  {% if site.tags[page.tag] %}
-    <ul>
-    {% for post in site.tags[page.tag] %}
-      <li class="post-date">
-        <a href="{{ post.url }}">{{ post.title }}</a><br />
-        <em class="meta">{{ post.date | date: "%-d %B" }}</em>
-      </li>
-    {% endfor %}
-    </ul>
-  {% else %}
-    <p>There are no posts for this tag.</p>
-  {% endif %}
-</article>
+{% if site.tags[page.tag] %}
+  {% for post in site.tags[page.tag] %}
+    <dt><a href="{{ post.url }}">{{ post.title }}</a></dt>
+    <dd><em>{{ post.date | date: "%-d %B" }}</em></dd>
+  {% endfor %}
+{% else %}
+  <p>There are no posts for this tag.</p>
+{% endif %}
