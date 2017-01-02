@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Danger Brewing&#58; The JavaScript Powered Kegerator &mdash; Tech Overview
-tags: [web-development, ember, firebase, javascript, raspberry-pi]
+tags: [web-development, ember, firebase, javascript, raspberry-pi, medium]
+medium: https://medium.com/@jonpitch/danger-brewing-the-javascript-powered-kegerator-part-3-tech-overview-6bb722013429
 ---
 
 ![Danger Brewing](/public/img/posts/20170102/cover.jpeg "The end result — A dope looking JavaScript powered beer dispensing piece of madness.")
