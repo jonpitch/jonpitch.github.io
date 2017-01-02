@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Localization Is Hard&#58; Here's How We Solved It
-tags: [web-development, localization, products]
+tags: [web-development, localization, products, medium]
+medium: https://medium.com/@jonpitch/localization-is-hard-heres-how-we-solved-it-52dad61bfce3
 ---
 
 ## Why It's Hard
