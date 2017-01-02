@@ -41,11 +41,13 @@ With a similar skeleton around the lid.
 
 ![Lid Skeleton](/public/img/posts/20170102/overview-3.jpeg "The skeleton frame around the lid portion.")
 
-![Pine Framing](/public/img/posts/20170102/overview-4.jpeg "On top of the skeleton is the finishing wood — pine.")
-
 The original goal was to use reclaimed wood, pallet wood or something up-cycled. This proved to be quite difficult to find enough consistent building materials. I ended up using generic “white wood” (I’m still not sure what this is exactly) and pine from the hardware store. The “reclaimed” look was inspiration from [Young House Love](http://www.younghouselove.com/2011/04/at-long-last-a-completed-console/). The wood was roughed up randomly and stained with two different colors at different time intervals.
 
 ![Stained Pine](/public/img/posts/20170102/overview-5.jpeg "The pine trim pieces — stained.")
+
+No worries about the freezer exhaust, it was accounted for:
+
+![Freezer Exhaust](/public/img/posts/20170102/overview-12.jpg "The cover is a gutter guard spray painted black.")
 
 The draft towers are off the shelf 1.25" galvanized steel pipe and fittings. Most of which I was able to acquire locally with only a few pieces requiring purchase online.
 
@@ -58,6 +60,10 @@ The draft towers are off the shelf 1.25" galvanized steel pipe and fittings. Mos
 ![Draft Towers Finished Side](/public/img/posts/20170102/overview-9.jpeg "Fully assembled — side")
 
 ![Draft Towers Finished Front](/public/img/posts/20170102/overview-10.jpeg "Fully assembled — front")
+
+One last finishing touch, a skull bottle opener and cap catcher.
+
+![Skull Bottle Opener](/public/img/posts/20170102/overview-13.jpg "The most metal bottle opener")
 
 If you want to see more of the build process in detail, click [here]({% post_url 2017-01-02-danger-brewing-javascript-powered-kegerator-build %}).
 
@@ -85,7 +91,11 @@ Aside from monitoring keg volume and temperature, I wanted to use this project a
 * The hub (a [Raspberry Pi](https://www.raspberrypi.org/))
 * The web application (built with [Ember](http://emberjs.com/))
 
-The hub is a Raspberry Pi that sits on the lid of the kegerator (mostly just to look awesome). It is responsible for collecting sensor data and reporting it to my web application. There are three sensors being used:
+The hub is a Raspberry Pi that sits on the lid of the kegerator (mostly just to look awesome). 
+
+![Pi](/public/img/posts/20170102/overview-14.jpg "It has a matching wood shirt.")
+
+It is responsible for collecting sensor data and reporting it to my web application. There are three sensors being used:
 
 * Flow meters — these are built into the beer lines and record liquid that passes through them.
 * Temperature sensor (in the fridge) — this sensor monitors the freezer temperature.

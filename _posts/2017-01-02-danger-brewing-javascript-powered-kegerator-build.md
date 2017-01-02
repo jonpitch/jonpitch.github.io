@@ -71,6 +71,10 @@ After a lot of permutations of stain color, time, pre-treating, sanding, etc. I 
 
 ![White Wood Stained Side](/public/img/posts/20170102/build-15.jpeg "Side view of most of the base wood attached")
 
+On the other side, the freezer had an exhaust vent for its compressor. A wood frame was built around it and lined with a roof gutter guard - spray painted black.
+
+![Freezer Exhaust](/public/img/posts/20170102/overview-12.jpg "Everything went better than expected.")
+
 I’ll cover assembling the wood for the lid later on when I go over the draft towers.
 
 ## Air Flow
@@ -120,7 +124,11 @@ However, it is important to note that I was going to be putting a fair amount of
 
 It was very important that I be able to get to this stuff to either troubleshoot or add on to in the future. So the way my lid is laid out, the drip tray, some wood to the right and the wood in the rear right corner (near the Raspberry Pi) are all removable. They all fit together very tight so it’s not noticeable to most, but it’s easily removable.
 
-(TODO removal of pieces)
+![Tray Out](/public/img/posts/20170102/build-25.jpg "The drip tray slides out")
+
+![Side Out](/public/img/posts/20170102/build-26.jpg "The piece to the right slides out")
+
+![Rear Out](/public/img/posts/20170102/build-27.jpg "The rear three pieces pop out")
 
 After laying out the pieces where the draft towers were go, holes were cut to run the beer lines through.
 
