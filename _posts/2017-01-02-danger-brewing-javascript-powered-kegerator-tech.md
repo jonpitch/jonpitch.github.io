@@ -12,7 +12,7 @@ As mentioned in the [overview]({% post_url 2017-01-01-danger-brewing-javascript-
 * [Raspberry Pints](http://raspberrypints.com/)
 * [Kegomatic](https://learn.adafruit.com/adafruit-keg-bot/overview)
 
-Ultimately, these projects I felt either were too complicated for what I wanted to do or didn’t meet my objectives, etc. I also wanted to take the time to learn some new things along the way.
+I felt these projects either were too complicated for what I wanted to do or didn’t meet my objectives, etc. I also wanted to take the time to learn some new things along the way.
 
 ## Architecture
 I have a physical device (the freezer) in the real world collecting some data. I want to be able to see that data when I’m away from the actual freezer, so via my phone, computer, etc. The freezer data was likely to be collected by an Arduino, Raspberry Pi or something similar. Having the data with me at all times is likely to be a mobile app, website, etc.

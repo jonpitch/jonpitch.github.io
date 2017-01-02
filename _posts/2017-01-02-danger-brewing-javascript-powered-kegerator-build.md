@@ -6,10 +6,10 @@ tags: [web-development, ember, firebase, javascript, raspberry-pi]
 
 ![Danger Brewing](/public/img/posts/20170102/cover.jpeg "The end result — A dope looking JavaScript powered beer dispensing piece of madness.")
 
-As mentioned in the [overview]({% post_url 2017-01-01-danger-brewing-javascript-powered-kegerator-overview %}), there were a lot of ways I could have went about this build. For example, do a Google search for *keezer*, *coffin keezer* or *kegerator*, you’ll see what I mean.
+As mentioned in the [overview]({% post_url 2017-01-01-danger-brewing-javascript-powered-kegerator-overview %}), there are lots of ways to go about this build. For example, do a Google search for *keezer*, *coffin keezer* or *kegerator*, you’ll see what I mean.
 
 ## Getting Started
-Early on I did a lot of research around different builds. What I ultimately liked the most, was this rustic looking [kegerator build](http://drewmcdowell.com/blog/9-uncategorised/81-kegerator) by Drew McDowell. There’s also a similar design in the comments of that blog post from a guy named Alex, which you can find [here](https://brewingwithalex.wordpress.com/2015/06/10/new-kegerator-design-reclaimed-wood-and-pipe/). The faux cement look was a little above my comfort level, but what I really liked was the wood look and the industrial style draft towers.
+I did a lot of research around different builds. I ultimately liked this rustic looking [kegerator build](http://drewmcdowell.com/blog/9-uncategorised/81-kegerator) by Drew McDowell. There’s also a similar design in the comments of that blog post from a guy named Alex, which you can find [here](https://brewingwithalex.wordpress.com/2015/06/10/new-kegerator-design-reclaimed-wood-and-pipe/). The faux cement look was a little above my comfort level, but what I really liked was the wood look and the industrial style draft towers.
 
 ## The Skeleton
 The freezer itself sits on a piece of “project board” and has some 2x4s to hold it tightly in place.
@@ -51,12 +51,12 @@ Now that the frame is in place and lid is put together, the freezer is starting 
 ![Casters](/public/img/posts/20170102/build-11.jpeg "They call me Mr. Fahrenheit — Travelin’ at the speed of light.")
 
 ## Let There Be Wood
-Initially, the idea was to find some reclaimed wood or pallet wood for a really rustic look. This proved difficult for two reasons:
+The idea was to find some reclaimed wood or pallet wood for a really rustic look. This proved difficult for two reasons:
 
 * This wood isn’t as easy to find in my area. Because Hipsters?
 * The wood I did find was really inconsistent, had lots of nails or was in awful shape.
 
-So for my sanity, I opted for generic white wood that I could buy off the shelf. It was marked up to look worn, the idea of which came from [Young House Love](http://www.younghouselove.com/2011/04/at-long-last-a-completed-console/).
+I opted for generic white wood that I could buy off the shelf. It was marked up to look worn, the idea of which came from [Young House Love](http://www.younghouselove.com/2011/04/at-long-last-a-completed-console/).
 I have two different types of wood in play here: pine and white wood. Both of these take stain differently, so I did a lot of test strips before I made anything final.
 
 ![Wood Samples](/public/img/posts/20170102/build-12.jpeg "I don’t think these are even all of the samples — just the better samples")
@@ -78,7 +78,7 @@ On the other side, the freezer had an exhaust vent for its compressor. A wood fr
 I’ll cover assembling the wood for the lid later on when I go over the draft towers.
 
 ## Air Flow
-Did I mention I did a lot of research before starting this project? One of the common problems I kept coming across from fellow kegerator owners: air circulation. Those with poor air circulation ran into problems of inconsistent temperatures or mold and mildew. Some remedied these problems either using a product called [DampRid](http://www.damprid.com/), or with some small PC fans. Luckily I found what I think is a more elegant solution [here](http://www.homebrewtalk.com/showthread.php?t=301204). This is my first time kegging anything, so I didn’t want to take any chances.
+One of the common problems I kept coming across from fellow kegerator owners: **air circulation**. Those with poor air circulation ran into problems of inconsistent temperatures or mold and mildew. Some remedied these problems either using a product called [DampRid](http://www.damprid.com/), or with some small PC fans. Luckily I found what I think is a more elegant solution [here](http://www.homebrewtalk.com/showthread.php?t=301204). This is my first time kegging anything, so I didn’t want to take any chances.
 
 The gist of this air flow system is a 2" PVC system that pulls air and circulates in the freezer with a bilge fan. I couldn’t physically fit 2" PVC and my kegs vertically without altering the interior lid height (I found this out the hard way), so I built a similar solution.
 
