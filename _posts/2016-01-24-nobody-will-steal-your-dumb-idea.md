@@ -9,6 +9,8 @@ tags: [humor, misc, products, medium]
 
 Ugh, yeah, sure, I *make apps*.
 
+<!--more-->
+
 > I have an awesome idea, want to hear it?
 
 Not particularly, but sure.

@@ -5,6 +5,10 @@ tags: [web-development, ember, firebase, javascript, raspberry-pi, medium]
 medium: https://medium.com/@jonpitch/danger-brewing-the-javascript-powered-kegerator-part-2-build-overview-e61d35fc7a13
 ---
 
+This is part two of three in a story about a completely unnecessary, over-engineered appliance that dispenses beer, has its own web application and reports data in real-time.
+
+<!--more-->
+
 ![Danger Brewing](/public/img/posts/20170102/cover.jpeg "The end result — A dope looking JavaScript powered beer dispensing piece of madness.")
 
 As mentioned in the [overview]({% post_url 2017-01-01-danger-brewing-javascript-powered-kegerator-overview %}), there are lots of ways to go about this build. For example, do a Google search for *keezer*, *coffin keezer* or *kegerator*, you’ll see what I mean.

@@ -7,6 +7,8 @@ tags: [misc, medium]
 
 Recruiters have a tough job, especially when it comes to placing software developers. I would also imagine any sales/commission based job is a difficult one, because it's simply a skill that I'm just bad at. Having said that, recruiting software developers has become a miserable experience for all parties involved.
 
+<!--more-->
+
 ## The Problem(s)
 
 As companies begin making pushes into mobile, focusing on user experience, responsive web applications, e-commerce, etc. there just aren't enough developers out there to fill all the positions. Because of this, software developers are in huge demand right now. The situation unfolds in this fashion:

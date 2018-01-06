@@ -6,6 +6,8 @@ tags: [misc, infrastructure]
 
 I've got 99 problems and installing the Juniper VPN in Ubuntu is all of them. If you have ever had that thought, then you're in the right spot.
 
+<!--more-->
+
 Getting Juniper up and running on Ubuntu can be a bit of a pain, but it's actually much simpler than it seems at first.  You basically only need two things:
 
 * 32 bit version of Firefox

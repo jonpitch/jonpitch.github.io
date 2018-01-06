@@ -6,6 +6,8 @@ tags: [android, ios, mobile]
 
 To communicate effectively, you have to know the language. Let's take a look at the native languages of both platforms at a very high level; For iOS: Objective-C/Swift and for Android: Java.
 
+<!--more-->
+
 ## iOS
 
 There are two languages a developer can use to write native iOS applications, Objective-C and Swift. Objective-C is a language that was created in the early 80s, while Swift was released in late 2014. Given that stark age difference, one can picture Objective-C as the grumpy old man and Swift as the hipster millenial. As you can imagine, both languages are quite different with Objective-C being very C like, verbose, etc. Swift on the other hand, while it has some Objective-C influence, it primarily looks like a scripting language, does type inference, no header files, less verbose, etc. Let's look at a few simple examples:

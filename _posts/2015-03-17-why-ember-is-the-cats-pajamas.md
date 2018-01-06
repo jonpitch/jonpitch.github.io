@@ -6,6 +6,8 @@ tags: [ember, web-development, javascript]
 
 If you have recently blinked, it's likely that you have missed the plethora of web development tools, frameworks, etc. There is one in particular that has my full attention however, [Ember](http://emberjs.com/).
 
+<!--more-->
+
 Full disclosure, I have spent far more time exploring Ember than similar tools like [Angular](https://angularjs.org/), [Backbone](http://backbonejs.org/), [Knockout](http://knockoutjs.com/), [React](http://facebook.github.io/react/), etc. Given that, this will not be a comparison of frameworks and tools, instead, just why I think Ember is completely awesome.
 
 ## Reasons To Love Ember

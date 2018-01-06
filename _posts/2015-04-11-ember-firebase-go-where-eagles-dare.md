@@ -5,7 +5,11 @@ medium: https://medium.com/@jonpitch/ember-amp-firebase-58-go-where-eagles-dare-
 tags: [ember, firebase, web-development, javascript, medium]
 ---
 
-At a recent [EmberJS Philly](http://www.meetup.com/EmberJS-Philly/) meetup, Brendan O'Hara ([&commat;BrendanOHara](https://twitter.com/BrendanOHara)) gave a great overview of [Ember](http://emberjs.com) and [Firebase](https://www.firebase.com/) (via [EmberFire](https://github.com/firebase/emberfire)). I thought the best takeaway from the talk was the following:
+At a recent [EmberJS Philly](http://www.meetup.com/EmberJS-Philly/) meetup, Brendan O'Hara ([&commat;BrendanOHara](https://twitter.com/BrendanOHara)) gave a great overview of [Ember](http://emberjs.com) and [Firebase](https://www.firebase.com/) (via [EmberFire](https://github.com/firebase/emberfire)). 
+
+<!--more-->
+
+I thought the best takeaway from the talk was the following:
 
 > "Your app isn't special". - Brendan O'Hara
 

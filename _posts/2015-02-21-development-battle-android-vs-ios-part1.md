@@ -6,6 +6,8 @@ tags: [android, ios, mobile]
 
 Developers are vital to each platform's success, so let's compare the development tools available for each platform. I'll cover the pros and cons of each platform, based on my personal experience.
 
+<!--more-->
+
 ## iOS
 
 Here's what I liked about [Xcode](https://developer.apple.com/xcode/), Apple's IDE for iOS applications:

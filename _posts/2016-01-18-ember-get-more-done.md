@@ -7,6 +7,8 @@ tags: [web-development, devops, ember, javascript, medium]
 
 [Ember](http://emberjs.com/) often gets lost amidst talks of other frameworks and tools like Angular, React, etc. and I think that's incredibly unfortunate. Because of Ember, I'm the most productive I have been in years and building some of the best software I have ever written. It's not that Ember is fundamentally better than other frameworks (*but it is...*), it's that Ember makes decisions for me, it makes my workflow far less complicated, levels the playing field and gives me more time to spend building awesome software.
 
+<!--more-->
+
 ## It's Super Opinionated
 Ember's very opinionated stance on many aspects of web development is my favorite feature of the framework. It's something you either love or hate. Frankly, both are valid opinions. Nobody wants to be told how to do their job, because murica', and I completely understand that sentiment.
 
@@ -31,4 +33,4 @@ If you're following closely, maybe you realize there's a theme emerging: *Stop t
 ## Get Shit Done
 Software development is hard. Working with people, business owners, designers, managing agile stories, devops, it's all a lot of work already. It's also a tremendous amount of mental effort arguing with other developers over which tools to use, how to do X, etc. All I want to do is write awesome software for my users. Honestly, I don't really care why Gulp is better than Broccoli or hearing about why React is the hotness. I need to get shit done.
 
-Adopting Ember, going all in with [JSON API](http://jsonapi.org/), using the [Lightning Deploy Workflow](http://ember-cli.com/ember-cli-deploy/) have all been revelations. My productivity has gone through the roof and I spent way more of my time doing what I love, building software and far less time debating tools and patterns.
+Adopting Ember, going all in with [JSON API](http://jsonapi.org/), using the [Lightning Deploy Workflow](http://ember-cli-deploy.com/) have all been revelations. My productivity has gone through the roof and I spent way more of my time doing what I love, building software and far less time debating tools and patterns.

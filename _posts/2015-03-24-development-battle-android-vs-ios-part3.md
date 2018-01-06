@@ -6,6 +6,8 @@ tags: [android, ios, mobile]
 
 I'll be comparing my experiences with basic debugging across both platforms. What won't be included are automated testing frameworks or 3rd party tools.
 
+<!--more-->
+
 ## iOS
 
 Having spent far less time working within the iOS platform there is going to be huge knowledge gap on my part in regards to testing frameworks, best practices, etc. With that in mind:

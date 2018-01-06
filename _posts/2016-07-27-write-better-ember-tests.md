@@ -7,6 +7,8 @@ tags: [web-development, ember, javascript, testing, medium]
 
 If you're not testing your code, well, you've got some nerve. For the rest of us rational people, let's look at some basic tips for writing better Ember tests.
 
+<!--more-->
+
 ## What Makes a Good Test
 
 There are three core components:

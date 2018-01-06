@@ -7,9 +7,11 @@ tags: [codeception, devops, testing]
 
 First, if you're a software developer and not writing tests, please either start immediately or quit your job forever.
 
+<!--more-->
+
 ***Update June 20th, 2015:*** This extension is now available on [Github](https://www.github.com/jonpitch/laxative) and via [Composer](https://packagist.org/packages/jonpitch/laxative)
 
-[Codeception](http://www.codeception.com) is a testing framework that I have used over the years with much success. I think it does a great job of being extensible and most importantly, tests are easy to write. However, regardless of its ease of use, eventually you'll wind up working with data, which can be a huge pain in the ass. There's a [Db module](http://codeception.com/docs/modules/Db) for Codeception that makes this mostly painless to deal with. Here's how it works:
+[Codeception](http://codeception.com) is a testing framework that I have used over the years with much success. I think it does a great job of being extensible and most importantly, tests are easy to write. However, regardless of its ease of use, eventually you'll wind up working with data, which can be a huge pain in the ass. There's a [Db module](http://codeception.com/docs/modules/Db) for Codeception that makes this mostly painless to deal with. Here's how it works:
 
 * You dump your database to a file
 * Before your test runs, your database is restored from the dump file.

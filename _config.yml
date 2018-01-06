@@ -1,17 +1,16 @@
-# Dependencies
 markdown:         kramdown
 highlighter:      rouge
 
-# Permalinks
 permalink:        pretty
 
-# Setup
 title:            Jon Pitcherella
 tagline:          'Developer. Home Brewer.'
-description:      'Great developer.<br />Home brewer and metal head.<br />User of haiku.'
+description:      'Great developer.<br />Home brewer and metal head.<br />Writer of haiku.'
 url:              http://jonpitcherella.com
 baseurl:          /
 brand-color:      '#202020'
+
+excerpt_separator:  <!--more-->
 
 author:
   name:           'Jon Pitcherella'
@@ -19,23 +18,18 @@ author:
 
 paginate:         5
 
-# Gems
-gems:             [jekyll-paginate, jekyll-gist]
+plugins:          [jekyll-paginate, jekyll-gist]
 
-# Social
 social:
   email:          'jon.pitcherella@gmail.com'
   twitter:        'jonpitch'
   github:         'jonpitch'
   medium:         'jonpitch'
 
-# Google Analytics
 ga:
   id:             'UA-33882544-1'
 
-# Disqus
 disqus:
   shortname:      'jonpitcherella'
 
-# Build Settings
-exclude: ['README.md']
+exclude: ['README.md', 'vendor']
