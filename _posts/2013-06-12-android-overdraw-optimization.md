@@ -6,6 +6,8 @@ tags: [android, mobile]
 
 Overdraw is painting a pixel more than once and it's very easy to overlook when building an Android application.
 
+<!--more-->
+
 Overdraw can lead to poor view performance on lower end phones if not properly taken care of.  Overdraw often happens with poorly thought out styles where a background style gets applied and then has subsequent styles drawn on top, such as `ListView`s, `TextView`s, etc.  It's probably easier to see what in the world I'm talking about:
 
 * On your Android 4.2 device, open up settings

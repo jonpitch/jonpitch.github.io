@@ -5,9 +5,11 @@ tags: [web-development, ember, firebase, javascript, raspberry-pi, medium]
 medium: https://medium.com/@jonpitch/danger-brewing-the-javascript-powered-kegerator-part-1-dafd82003d36
 ---
 
-![Danger Brewing](/public/img/posts/20170102/cover.jpeg "End result — A dope looking JavaScript powered beer dispensing piece of madness.")
-
 This is a story about a completely unnecessary, over-engineered appliance that dispenses beer, has its own web application and reports data in real-time.
+
+<!--more-->
+
+![Danger Brewing](/public/img/posts/20170102/cover.jpeg "End result — A dope looking JavaScript powered beer dispensing piece of madness.")
 
 ---
 
@@ -43,7 +45,7 @@ With a similar skeleton around the lid.
 
 ![Lid Skeleton](/public/img/posts/20170102/overview-3.jpeg "The skeleton frame around the lid portion of the freezer.")
 
-The original goal was to use reclaimed wood, pallet wood or something up-cycled. This proved to be quite difficult to find enough consistent building materials. I ended up using generic “white wood” (I’m still not sure what this is exactly) and pine from the hardware store. The “reclaimed” look was inspiration from [Young House Love](http://www.younghouselove.com/2011/04/at-long-last-a-completed-console/). The wood was roughed up randomly and stained with two different colors at different time intervals.
+The original goal was to use reclaimed wood, pallet wood or something up-cycled. This proved to be quite difficult to find enough consistent building materials. I ended up using generic “white wood” (I’m still not sure what this is exactly) and pine from the hardware store. The “reclaimed” look was inspiration from [Young House Love](https://www.younghouselove.com/2011/04/at-long-last-a-completed-console/). The wood was roughed up randomly and stained with two different colors at different time intervals.
 
 ![Stained Pine](/public/img/posts/20170102/overview-5.jpeg "The pine trim pieces — stained.")
 

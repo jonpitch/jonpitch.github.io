@@ -6,6 +6,8 @@ tags: [android, ios, mobile]
 
 Let's take a look at the last mile of the mobile application process, deploying to users and post deployment.
 
+<!--more-->
+
 # Deployment Process
 
 ## Android

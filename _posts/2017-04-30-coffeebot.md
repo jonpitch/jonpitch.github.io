@@ -5,8 +5,8 @@ tags: [web-development, javascript, raspberry-pi, medium]
 medium: https://medium.com/@jonpitch/building-a-coffee-bot-61b6a41fa2cb
 ---
 
-## Overview
 The coffee situation in a crowded office can be difficult. If you don't get the jump on a fresh pot of coffee, you might miss out entirely. Enter coffeebot.
+<!--more-->
 
 ## How It Works
 Coffeebot monitors your drip coffee maker's electrical current. More specifically, it monitors how long it takes a [capacitor](https://en.wikipedia.org/wiki/Capacitor) to discharge while the coffee maker is drawing current. Fortunately, drip coffee makers draw electrical current in three distinct phases: ***idle***, ***brewing*** and ***heating***.

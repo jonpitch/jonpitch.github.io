@@ -7,6 +7,8 @@ tags: [products, medium]
 
 I spent a good portion of my spare time over the last few years working on a side project. For this particular project I formed an LLC, opened a bank account, existed on multiple social media platforms, had both an iOS and Android app and so forth. Now I can't wait to shut it all down.
 
+<!--more-->
+
 # Products are Hard
 There is a lot that goes in to a product, like marketing, social media, maintenance, support, development, etc. I found this particularly difficult because only one of those things I genuinely like doing (development, in case you were wondering). Unfortunately for me, to move a product forward, marketing and social media are arguably the most important. It doesn't matter how many features you build or how kick ass your code is if nobody knows about it.
 

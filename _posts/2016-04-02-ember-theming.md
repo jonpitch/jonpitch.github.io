@@ -5,8 +5,9 @@ medium: https://medium.com/@jonpitch/ember-theming-97e9562084c7
 tags: [web-development, ember, javascript, medium]
 ---
 
-## Intro
 Theming a web application typically involves swapping out stylesheets or moving CSS classes around. But what if you have a single page application? It's a little tricky, but [EmberJS](http://emberjs.com/) and [SASS](http://sass-lang.com/) make it incredibly easy.
+
+<!--more-->
 
 ## Goals
 There are two primary goals that I wanted to achieve:

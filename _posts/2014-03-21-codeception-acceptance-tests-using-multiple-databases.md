@@ -6,6 +6,8 @@ tags: [codeception, testing]
 
 [Codeception](http://codeception.com/) is a great PHP testing framework and I would highly recommend it to anyone that needs functional, unit or acceptance testing, even if your application isn't PHP based. Not only does it give you a lot out of the box, but it's very modular and extensible.
 
+<!--more-->
+
 One of the most commonly used Codeception modules is the [Db](http://codeception.com/docs/modules/Db) module. The idea with the Db module is that you create a dump of your database, then before each scenario your database is rebuilt from the dump and after the scenario your database is cleaned up. This is great for testing because each of your tests can be data independent and stand by themselves.
 
 The only downside with the Db module is that it is meant to work in your traditional web application, meaning you have a web application and one database. But what if you are building a web application that instead of having a traditional database of its own, communicates with several web services and relies on those services for data? Assuming of course that these web services are your own and under your control, Codeception has you covered (that's a software testing pun for those keeping score at home).

@@ -6,6 +6,8 @@ tags: [android, ios, mobile]
 
 Developers are vital to each platform's success, so let's compare the development tools available for each platform. I'll cover the pros and cons of each platform, based on my personal experience.
 
+<!--more-->
+
 ## iOS
 
 Here's what I liked about [Xcode](https://developer.apple.com/xcode/), Apple's IDE for iOS applications:
@@ -34,7 +36,7 @@ Xcode does integrate with source control, however I have found this integration 
 
 Screen real estate is often an issue for me. I have an old Macbook Pro, which isn't even mine, that I use for iOS development (it has a 15" screen for reference). When wiring up interface components from a storyboard, I often found it very tedious to do so without constant resizing of my screen, parts of the IDE, re-arranging my storyboard, etc.
 
-Dependency management just wasn't there. Granted, there is [Cocoapods](http://cocoapods.org/), which is great by the way, the lack of dependency management within Xcode was unfortunate.
+Dependency management just wasn't there. Granted, there is [Cocoapods](https://cocoapods.org/), which is great by the way, the lack of dependency management within Xcode was unfortunate.
 
 ## Android
 

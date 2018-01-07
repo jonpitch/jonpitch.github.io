@@ -9,6 +9,8 @@ Caching in a mobile application serves two important purposes and a good caching
 * Reduce battery consumption
 * Improve performance
 
+<!--more-->
+
 In HTTP based mobile applications, it's important to understand that using the cellular radio is expensive. Meaning the more HTTP requests you make using the cellular radio, the more battery drain you introduce on the user's device. There is a very good article on this topic on the Android developer guide, titled [Optimizing Downloads for Efficient Network Access](http://developer.android.com/training/efficient-downloads/efficient-network-access.html). If you only skim this article, the important thing to take away is the concept of the radio state machine. The idea being that initiating a single HTTP request on a cellular radio uses power to make the request, but also uses power after the request has been made until the radio goes into standby. If your'e making several HTTP requests on a regular basis, the cellular radio remains "on", draining battery power.
 
 There are two ways this problem can be addressed:

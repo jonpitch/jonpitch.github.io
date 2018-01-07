@@ -7,6 +7,8 @@ tags: [web-development, devops, testing, medium]
 
 Maintaining software, especially when you are not the original author, is the worst. How many times have you looked at brutal code and your first thought was, "Why don't I just re-write this?" Of course, this thought is detrimental to your time, your perception of a codebase and potentially to your team. Here are some tips to maintain code quality over time.
 
+<!--more-->
+
 ## Establish Best Practices
 
 When you're working with a team of developers, without established patterns, your code can drift over time. For example, one developer might perform a common task one way while another performs the task slightly differently. Ultimately the output is correct, but over time these idiosyncrasies can become maintenance nightmares.

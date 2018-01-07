@@ -6,11 +6,13 @@ tags: [web-development, javascript, raspberry-pi]
 
 If JavaScript isn't your thing, turn back now because we're going to be implementing the MEAN stack on a Raspberry Pi. The MEAN stack (MongoDB, Express, AngularJS and NodeJS) is a web stack based entirely in JavaScript.
 
+<!--more-->
+
 Before we get started, you'll need a few things:
 
-* Raspberry Pi - Preferably the 512 MB version</li>
-* Micro SD card - at least 8 GB</li>
-* Peripherals for your first boot into the Pi (e.g. keyboard, monitor)</li>
+* Raspberry Pi - Preferably the 512 MB version
+* Micro SD card - at least 8 GB
+* Peripherals for your first boot into the Pi (e.g. keyboard, monitor)
 * Lots of free time
 
 ## A Few Notes First
@@ -158,7 +160,7 @@ To start and stop NodeJS, you can use the following commands respectively:
 {% highlight bash %}sudo /etc/init.d/nodejs.sh start
 sudo /etc/init.d/nodejs.sh stop{% endhighlight %}
 
-You should now have your NodeJS server up and running on port 8080.  Special thanks to Matthias Rüedlinger who put this together.  You can read more in depth about his process [here](http://blog.rueedlinger.ch/2013/03/raspberry-pi-and-nodejs-basic-setup/).
+You should now have your NodeJS server up and running on port 8080.  Special thanks to Matthias Rüedlinger who put this together. You can read more in depth about his process on his blog (`http://blog.rueedlinger.ch/2013/03/raspberry-pi-and-nodejs-basic-setup/`).
 
 ## Install Express
 In the directory of our application, which we had as <em>/home/pi/application</em>, we'll want to create a file called <em>package.json:</em>
