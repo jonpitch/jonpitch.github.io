@@ -8,7 +8,7 @@ If you have recently blinked, it's likely that you have missed the plethora of w
 
 <!--more-->
 
-Full disclosure, I have spent far more time exploring Ember than similar tools like [Angular](https://angularjs.org/), [Backbone](http://backbonejs.org/), [Knockout](http://knockoutjs.com/), [React](http://facebook.github.io/react/), etc. Given that, this will not be a comparison of frameworks and tools, instead, just why I think Ember is completely awesome.
+Full disclosure, I have spent far more time exploring Ember than similar tools like [Angular](https://angularjs.org/), [Backbone](http://backbonejs.org/), [Knockout](http://knockoutjs.com/), [React](https://facebook.github.io/react/), etc. Given that, this will not be a comparison of frameworks and tools, instead, just why I think Ember is completely awesome.
 
 ## Reasons To Love Ember
 
@@ -28,7 +28,7 @@ Model View Controller - a familiar software design pattern. If you have spent an
 
 ### Forward Thinking
 
-If you're getting started with Ember, you're probably looking at [Ember CLI](http://www.ember-cli.com/). Ember CLI uses the [ES6 Module Transpiler](https://github.com/square/es6-module-transpiler) so you get ES6 support built in. Ember CLI's build tool [Broccoli](https://github.com/joliss/broccoli) gives you lightning fast application builds; no more do you have to wait for [Grunt](http://gruntjs.com/) to finish. Ember also comes with [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) built in.
+If you're getting started with Ember, you're probably looking at [Ember CLI](https://www.ember-cli.com/). Ember CLI uses the [ES6 Module Transpiler](https://github.com/square/es6-module-transpiler) so you get ES6 support built in. Ember CLI's build tool [Broccoli](https://github.com/joliss/broccoli) gives you lightning fast application builds; no more do you have to wait for [Grunt](http://gruntjs.com/) to finish. Ember also comes with [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) built in.
 
 ### Data-Binding & Managing State
 

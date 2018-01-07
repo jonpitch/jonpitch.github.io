@@ -45,7 +45,7 @@ With a similar skeleton around the lid.
 
 ![Lid Skeleton](/public/img/posts/20170102/overview-3.jpeg "The skeleton frame around the lid portion of the freezer.")
 
-The original goal was to use reclaimed wood, pallet wood or something up-cycled. This proved to be quite difficult to find enough consistent building materials. I ended up using generic “white wood” (I’m still not sure what this is exactly) and pine from the hardware store. The “reclaimed” look was inspiration from [Young House Love](http://www.younghouselove.com/2011/04/at-long-last-a-completed-console/). The wood was roughed up randomly and stained with two different colors at different time intervals.
+The original goal was to use reclaimed wood, pallet wood or something up-cycled. This proved to be quite difficult to find enough consistent building materials. I ended up using generic “white wood” (I’m still not sure what this is exactly) and pine from the hardware store. The “reclaimed” look was inspiration from [Young House Love](https://www.younghouselove.com/2011/04/at-long-last-a-completed-console/). The wood was roughed up randomly and stained with two different colors at different time intervals.
 
 ![Stained Pine](/public/img/posts/20170102/overview-5.jpeg "The pine trim pieces — stained.")
 

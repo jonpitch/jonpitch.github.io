@@ -61,7 +61,7 @@ The idea was to find some reclaimed wood or pallet wood for a really rustic look
 * This wood isn’t as easy to find in my area. Because Hipsters?
 * The wood I did find was really inconsistent, had lots of nails or was in awful shape.
 
-I opted for generic white wood that I could buy off the shelf. It was marked up to look worn, the idea of which came from [Young House Love](http://www.younghouselove.com/2011/04/at-long-last-a-completed-console/).
+I opted for generic white wood that I could buy off the shelf. It was marked up to look worn, the idea of which came from [Young House Love](https://www.younghouselove.com/2011/04/at-long-last-a-completed-console/).
 I have two different types of wood in play here: pine and white wood. Both of these take stain differently, so I did a lot of test strips before I made anything final.
 
 ![Wood Samples](/public/img/posts/20170102/build-12.jpeg "I don’t think these are even all of the samples — just the better samples")
