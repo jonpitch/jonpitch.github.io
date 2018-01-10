@@ -112,7 +112,7 @@ To read more about the technology build process in detail, click [here]({% post_
 ## Wrapping Up
 This project took a lot longer than I had anticipated. I was often discouraged, spent too much money and learned lessons the hard way. But ultimately, when I poured that first beer and saw my web application update in real time — holy. shit.
 
-To see what I have on tap at any given moment or want to see how my freezer is doing, the web application can be found here: [dangerbrewing.io](http://dangerbrewing.io). It’s currently hosted for free, so it may be slow to load. If you’re a complainer or some kind of jerk, feel free to send some dollars my way to fix that.
+To see what I have on tap at any given moment or want to see how my freezer is doing, the web application can be found here: [dangerbrewing.io](http://www.dangerbrewing.io/). It’s currently hosted for free, so it may be slow to load. If you’re a complainer or some kind of jerk, feel free to send some dollars my way to fix that.
 
 To read more about the build process, click [here]({% post_url 2017-01-02-danger-brewing-javascript-powered-kegerator-build %}). Or to read more about the technology involved, head [here]({% post_url 2017-01-02-danger-brewing-javascript-powered-kegerator-tech %}).
 

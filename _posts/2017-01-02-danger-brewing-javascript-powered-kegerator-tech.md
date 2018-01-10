@@ -110,7 +110,7 @@ As mentioned throughout, the code for both the hub and web application are open 
 * [Hub](https://github.com/jonpitch/danger-brewing-hub)
 * [Ember Application](https://github.com/jonpitch/danger-brewing)
 
-Feel free to contribute or help out in some way. If you’d like to see the project in action, you can check it out at: [dangerbrewing.io](http://dangerbrewing.io). It’s using a Heroku free dyno, so please be patient with the loading time.
+Feel free to contribute or help out in some way. If you’d like to see the project in action, you can check it out at: [dangerbrewing.io](http://www.dangerbrewing.io/). It’s using a Heroku free dyno, so please be patient with the loading time.
 
 If you have any questions, comments, etc. I’d love to hear them.
 
