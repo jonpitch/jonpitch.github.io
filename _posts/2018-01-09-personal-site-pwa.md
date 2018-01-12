@@ -75,11 +75,15 @@ front-matter in javascript is jenky.
 ![after service worker and manifest](/public/img/posts/20180109/after-worker-manifest.png "after service worker and manifest")
 
 ## accessibility improvements
-- improve tag contrast
+- improve link contrast
+- landmark `main`
+- had an empty `h1`
 
 install [aXe](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd) chrome extension
 
 [tool](http://leaverou.github.io/contrast-ratio/) to help pick better contrast
+
+![after contrast](/public/img/posts/20180109/a11y-after-lighthouse.png "after a11y updates")
 
 ## anything i can do about disqus?
 both best practices failed audits are from disqus.
