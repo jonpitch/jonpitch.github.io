@@ -16,7 +16,7 @@ var urlsToCache = [];
     {% endfor %}
 {% endfor %}
 
-var CACHE_NAME = 'jon-pitcherella-cache-v1';
+var CACHE_NAME = 'jon-pitcherella-{{ site.time }}';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
