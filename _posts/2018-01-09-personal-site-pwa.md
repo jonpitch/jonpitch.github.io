@@ -61,15 +61,31 @@ This is back to GitHub pages level of performance.
 
 after build: https://5a55802081987672d5bbca5d--jonpitch.netlify.com/
 
-## service worker
+## service worker and manifest
 
 [borrowed](https://jamesiv.es/jekyll/amp/2017/05/09/serviceworkers-with-jekyll.html)
 
-## manifest
+caches first 5 posts only, nothing crazy.
+front-matter in javascript is jenky.
+
+`before`
+![before service worker and manifest](/public/img/posts/20180109/before-worker-manifest.png "before service worker and manifest")
+
+`after`
+![after service worker and manifest](/public/img/posts/20180109/after-worker-manifest.png "after service worker and manifest")
 
 ## accessibility improvements
+- improve tag contrast
+
+install [aXe](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd) chrome extension
+
+[tool](http://leaverou.github.io/contrast-ratio/) to help pick better contrast
 
 ## anything i can do about disqus?
+both best practices failed audits are from disqus.
+
+## performance at 100?
+css blocking by 250ms.
 
 ## keep it that way
 lighthouse bot
