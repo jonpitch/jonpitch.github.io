@@ -85,8 +85,18 @@ install [aXe](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindn
 
 ![after contrast](/public/img/posts/20180109/a11y-after-lighthouse.png "after a11y updates")
 
-## anything i can do about disqus?
-both best practices failed audits are from disqus.
+## deprecated web apis?
+getting dinged in best practices for:
+```
+'window.webkitStorageInfo' is deprecated. Please use 'navigator.webkitTemporaryStorage' or 'navigator.webkitPersistentStorage' instead.
+```
+
+and
+```
+TypeError: Math.max is not a function at PerformanceObserver.window.PerformanceObserver.entryList (<anonymous>:8:30)
+```
+
+suspected Google Analytics or Disqus. Removing both had no impact. Perhaps it's out of my control?
 
 ## performance at 100?
 css blocking by 250ms.
