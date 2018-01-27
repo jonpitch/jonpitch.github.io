@@ -1,105 +1,127 @@
 ---
 layout: post
-title: Turning personal site into PWA
+title: A Step by Step Jekyll Blog to Progresive Web App Guide
 tags: [web-development, javascript, progressive-web]
 ---
 
-Intro
+In recent years, web technologies have started to catch up to mobile devices in terms of offering a first-class mobile experience. Here's a step by step guide in the effort required to migrate my personal website to a progressive web application (PWA).
 <!--more-->
 
-`gh-pages`
+## Before Getting Started
+In order to track my progress, I made extensive use of the open-source project, [Lighthouse](https://github.com/GoogleChrome/lighthouse). There's a handy chrome extension available [here](https://developers.google.com/web/tools/lighthouse/). 
+
+For those unfamiliar, Lighthouse will audit your site and give you a score over five categories:
+
+- Progressive Web Application
+- Performance
+- Accessibility
+- Best Practices
+- SEO
+
+Scores range from 0 (worst) to 100 (best) and very often it will report tips or suggestions on improving your score.
+
+## Establish a Baseline
+At the start of this project, this site is:
+
+- Built with [Jekyll](https://jekyllrb.com/)
+- Uses [Hyde](http://hyde.getpoole.com/) as a theme
+- Hosted on [GitHub Pages](https://pages.github.com/)
+
+Here's that baseline score:
+
 ![GitHub Pages](/public/img/posts/20180109/github-pages-lighthouse.png "GitHub Pages - Lighthouse")
 
-- PWA: Does not use HTTPS
-- Best Practices: Does not use HTTPS
-- Best Practices: Does not use HTTP2
+I'm immediately docked points for not using HTTPS. As of this blog post, GitHub does not offer HTTPS for static sites that use custom domains (they do offer HTTPS for non-custom domains, for free). There's an [open issue](https://github.com/isaacs/github/issues/156) around supporting it; but rather than wait for GitHub to maybe support this feature, I decided to migrate my site to [Netlify](https://www.netlify.com/), which offers SSL for custom domains.
 
-`netlify`
+I was initially worried I might have some performance degredation with Netlify over GitHub. I connected my repository and built my site. Here are the results:
+
 ![Netlify](/public/img/posts/20180109/netlify-lighthouse.png "Netlify - Lighthouse")
 
-- Performance: First meaningful paint - 1.35s (compared to 1.0s GH pages)
-- Performance: First interactive paint - 2.06s (compared to 1.65s GH pages)
+My scores increased with no effort and I saw comparable performance to GitHub pages. For example, I was seeing ~1 second to [first meaningful paint](https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint) on GitHub pages and ~1.3 seconds on Netlify. That was close enough without any optimization to move forward.
 
-## first
-migrate to netlify
-- easy score increase
-- custom domain
-- free ssl
+#### Netlify + HTTPS
+Migrating my site to Netlify was a snap, so I won't dive in to it. There is good documentation [here](https://www.netlify.com/docs/) and [here](https://www.netlify.com/blog/2017/05/11/migrating-your-jekyll-site-to-netlify/).
 
-`move dns`
-- tell netlify your domain
-- configure your dns
-- wait for propagation
-- provision cert
-- redirect http to https
+After getting my repository connected:
 
-`after`
+- Enabled my custom domain
+- Enabled my free SSL certificate
+- Re-pointed my DNS from GitHub pages to Netlify
+
+Here are the results:
+
 ![Hosted with Netlify](/public/img/posts/20180109/netlify-hosted-lighthouse.png "Hosted Netlify - Lighthouse")
 
-## asset optimization
-before build: https://deploy-preview-9--jonpitch.netlify.com/
+## Asset Optimization
+This can be a complicated topic in web development, luckily this is literally a checkbox in Netlify ([here](https://www.netlify.com/blog/2017/02/15/how-to-shave-time-off-of-your-load-time-its-really-really-easy/) is an overview).
 
-Sites requests before asset optimization:
+Without asset optimization enabled, here are the asset requests:
 
-`no optimization`
 ![No asset optimization](/public/img/posts/20180109/no-asset-optimization.png "No asset optimization")
 
-first meaningful paint - 1.35s
-first interactive paint - 2.06s
+And the lighthouse score:
 
 ![performance lighthouse - no asset optimization](/public/img/posts/20180109/no-asset-optimization-lighthouse.png "performance lighthouse - no asset optimization")
 
-`asset optimization`
+- First meaningful paint - 1.35 seconds
+- First interactive paint - 2.06 seconds
+
+After enabling the asset optimization feature:
+
 ![with asset optimization](/public/img/posts/20180109/asset-optimization.png "With asset optimization")
 
-first meaningful paint - 1.04s
-first interactive paint - 1.7s
-
-This is back to GitHub pages level of performance.
+And the lighthouse score:
 
 ![performance lighthouse - asset optimization](/public/img/posts/20180109/asset-optimization-lighthouse.png "performance lighthouse - asset optimization")
 
-after build: https://5a55802081987672d5bbca5d--jonpitch.netlify.com/
+- First meaningful paint - 1.04 seconds
+- First interactive paint - 1.7 seconds
 
-## service worker and manifest
+Now we're back to GitHub levels of performance.
 
-[borrowed](https://jamesiv.es/jekyll/amp/2017/05/09/serviceworkers-with-jekyll.html)
+## Service Worker and Manifest
+Service worker is a recent web technology which enables things like push notifications, background sync, caching, etc. There's a good overview [here](https://developers.google.com/web/fundamentals/primers/service-workers/). I found a great tutorial on service worker with Jekyll [here](https://jamesiv.es/jekyll/amp/2017/05/09/serviceworkers-with-jekyll.html).
 
-caches first 5 posts only, nothing crazy.
-front-matter in javascript is jenky.
+[Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) is another best practice for progressive web applications. In general, they provide metadata and allows users to "install" your site, similar to a native mobile application.
 
-`before`
+Here is the lighthouse score before having a service worker and a robust manifest:
+
 ![before service worker and manifest](/public/img/posts/20180109/before-worker-manifest.png "before service worker and manifest")
 
-`after`
+Here are the results after:
+
 ![after service worker and manifest](/public/img/posts/20180109/after-worker-manifest.png "after service worker and manifest")
 
-## accessibility improvements
-- improve link contrast
-- landmark `main`
-- had an empty `h1`
+`:thumbs-up-emoji:`
 
-install [aXe](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd) chrome extension
+## Accessibility
+Most of my room for improvement here had to do with:
 
-[tool](http://leaverou.github.io/contrast-ratio/) to help pick better contrast
+- Improving color contrast
+- Missing [landmark](https://www.w3.org/TR/wai-aria-practices/examples/landmarks/HTML5.html)
+
+I'm not a designer, so I found a couple great tools to help in this area. I installed a the [aXe](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd) chrome extension. It adds a new tab to DevTools and will point out accessibility issues. I also used [this](http://leaverou.github.io/contrast-ratio/) online tool to help compare color contrast.
+
+Here are the results after:
 
 ![after contrast](/public/img/posts/20180109/a11y-after-lighthouse.png "after a11y updates")
 
-## deprecated web apis?
-getting dinged in best practices for:
+## Room for Improvement
+My best practices score seems to be out of my control:
+
 ```
 'window.webkitStorageInfo' is deprecated. Please use 'navigator.webkitTemporaryStorage' or 'navigator.webkitPersistentStorage' instead.
-```
 
-and
-```
 TypeError: Math.max is not a function at PerformanceObserver.window.PerformanceObserver.entryList (<anonymous>:8:30)
 ```
 
-suspected Google Analytics or Disqus. Removing both had no impact. Perhaps it's out of my control?
+I couldn't track down the culprit, but I suspect it's Chrome or some extension.
 
-## performance at 100?
-css blocking by 250ms.
+My performance score is almost 100, but is currently docked for [CSS blocking paint](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css) by 250 milliseconds. I'm pretty happy with this score as is, but perhaps in the future I'll optimize this further.
 
-## keep it that way
-lighthouse bot
+It would also be great to integrate lighthouse into [CI](https://github.com/ebidel/lighthouse-ci), also for another time.
+
+## Wrapping Up
+I know this is a pretty trivial web site, but making it progressive was pretty simple. I'd love to hear about more complicated web applications, or single page web applications and how easy or difficult it is to build and maintain them as progressive web apps.
+
+If you are a Jekyll user and like the Hyde them, I made a [progressive variant](https://github.com/jonpitch/progressive-hyde) that you can use to get started with your site.
