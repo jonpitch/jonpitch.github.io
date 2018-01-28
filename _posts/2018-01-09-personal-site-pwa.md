@@ -1,7 +1,8 @@
 ---
 layout: post
-title: A Step by Step Jekyll Blog to Progresive Web App Guide
+title: A Step by Step Jekyll Blog to Progressive Web App Guide
 tags: [web-development, javascript, progressive-web]
+medium: https://medium.com/@jonpitch/turning-my-jekyll-blog-into-a-progressive-web-application-58f9046eb6b2
 ---
 
 In recent years, web technologies have started to catch up to mobile devices in terms of offering a first-class mobile experience. Here's a step by step guide in the effort required to migrate my personal website to a progressive web application (PWA).
@@ -124,4 +125,4 @@ It would also be great to integrate lighthouse into [CI](https://github.com/ebid
 ## Wrapping Up
 I know this is a pretty trivial web site, but making it progressive was pretty simple. I'd love to hear about more complicated web applications, or single page web applications and how easy or difficult it is to build and maintain them as progressive web apps.
 
-If you are a Jekyll user and like the Hyde them, I made a [progressive variant](https://github.com/jonpitch/progressive-hyde) that you can use to get started with your site.
+If you are a Jekyll user and like the Hyde theme, I made a [progressive variant](https://github.com/jonpitch/progressive-hyde) that you can use to get started with your site.
