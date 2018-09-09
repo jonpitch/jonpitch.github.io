@@ -124,5 +124,7 @@ _note: the big dip in performance is related to Lighthouse switching major versi
 Our scores went up across the board, which is terrific. That performance number is still terrible though, so let's see what it takes to slim down our build size.
 
 ## Keep reading
-- [Baseline]({% post_url 2018-09-01-ember-pwa-baseline %})
+- [Baseline]({% post_url 2018-09-01-ember-pwa-baseline %}) 
 - [Add web manifest]({% post_url 2018-09-02-ember-pwa-manifest %}) _(you are here)_
+- [Remove liquid fire]({% post_url 2018-09-03-ember-pwa-no-liquid-fire %}) 
+- [Bundle web fonts]({% post_url 2018-09-04-ember-pwa-include-web-fonts %})  
