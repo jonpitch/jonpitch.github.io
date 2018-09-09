@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Progressive Ember - Remove Liquid Fire
+title: Progressive Ember - Moment Timezones
 tags: [ember, progressive-web, web-development, javascript]
 ---
 

@@ -124,5 +124,5 @@ _note: the big dip in performance is related to Lighthouse switching major versi
 Our scores went up across the board, which is terrific. That performance number is still terrible though, so let's see what it takes to slim down our build size.
 
 ## Keep reading
-- [Baseline]({% post_url 2018-09-08-ember-pwa-baseline %})
-- [Add web manifest]({% post_url 2018-09-09-ember-pwa-manifest %}) _(you are here)_
+- [Baseline]({% post_url 2018-09-01-ember-pwa-baseline %})
+- [Add web manifest]({% post_url 2018-09-02-ember-pwa-manifest %}) _(you are here)_

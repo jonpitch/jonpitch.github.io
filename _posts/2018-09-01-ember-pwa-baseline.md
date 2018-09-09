@@ -64,5 +64,5 @@ Most PWA guides for Ember will tell you to start by removing jQuery. It's about 
 Let's get to work.
 
 ## Keep reading
-- [Baseline]({% post_url 2018-09-08-ember-pwa-baseline %}) _(you are here)_
-- [Add web manifest]({% post_url 2018-09-09-ember-pwa-manifest %})
+- [Baseline]({% post_url 2018-09-01-ember-pwa-baseline %}) _(you are here)_
+- [Add web manifest]({% post_url 2018-09-02-ember-pwa-manifest %})
