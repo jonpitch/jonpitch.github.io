@@ -59,3 +59,4 @@ Next up, **54 kB** for moment? wtf.
 - [Remove liquid fire]({% post_url 2018-09-03-ember-pwa-no-liquid-fire %}) 
 - [Bundle web fonts]({% post_url 2018-09-04-ember-pwa-include-web-fonts %}) 
 - [Random Lodash]({% post_url 2018-09-05-ember-pwa-random-lodash %}) _(you are here)_
+- [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
