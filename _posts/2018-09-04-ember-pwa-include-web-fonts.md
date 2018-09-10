@@ -101,3 +101,4 @@ Moving on, why the hell is there **65 kB** of `lodash` in my vendor build?
 - [Bundle web fonts]({% post_url 2018-09-04-ember-pwa-include-web-fonts %}) _(you are here)_
 - [Random Lodash]({% post_url 2018-09-05-ember-pwa-random-lodash %})
 - [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
+- [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %})
