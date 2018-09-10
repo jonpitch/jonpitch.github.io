@@ -61,3 +61,4 @@ Next up, **54 kB** for moment? wtf.
 - [Random Lodash]({% post_url 2018-09-05-ember-pwa-random-lodash %}) _(you are here)_
 - [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
 - [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %})
+- [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %})

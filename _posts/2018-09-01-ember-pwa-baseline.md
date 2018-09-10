@@ -71,3 +71,4 @@ Let's get to work.
 - [Random Lodash]({% post_url 2018-09-05-ember-pwa-random-lodash %})
 - [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
 - [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %})
+- [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %})

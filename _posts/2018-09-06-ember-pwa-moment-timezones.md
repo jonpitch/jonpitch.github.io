@@ -58,3 +58,4 @@ Up next, I'll see if I can replace [ember-cli-showdown](https://github.com/gcoll
 - [Random Lodash]({% post_url 2018-09-05-ember-pwa-random-lodash %})
 - [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %}) _(you are here)_
 - [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %})
+- [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %})
