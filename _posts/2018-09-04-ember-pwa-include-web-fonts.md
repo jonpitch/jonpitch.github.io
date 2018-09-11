@@ -6,7 +6,7 @@ tags: [ember, progressive-web, web-development, javascript]
 
 A walk through the real effort to transition an enterprise level Ember application to a progressive web application.
 
-Part three: Bundle web fonts
+Part three: Bundle web fonts and preload
 <!--more-->
 
 ## Ugh, web fonts
@@ -79,7 +79,16 @@ I went with `swap`, so that our fonts will block for a very small amount of time
 font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 ```
 
-The browser will try and render content with fonts in this order. Because we use `font-display: swap`, the initial paint to the user might appear in `Arial` and as soon as `Helvetica` is available, we'll swap it out for that font. Yes, this does mean users could see a blip in how text is rendered on load. We'll come back to this in a future post on preloading fonts.
+The browser will try and render content with fonts in this order. Because we use `font-display: swap`, the initial paint to the user might appear in `Arial` and as soon as `Helvetica` is available, we'll swap it out for that font. Yes, this does mean users could see a blip in how text is rendered on load.
+
+## Preload
+`swap` was ok, but we can use [preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content) to inform the browser that these resources will be needed right away. I can move my fonts in the the `<head>` as:
+
+```html
+<link rel="preload" href="{{rootURL}path/to/my/font.woff2" as="font" type="font/woff2" crossorigin>
+```
+
+Not all of my supported browsers actual [support preload](https://caniuse.com/#search=preload). 95% of my users have a supported browser, so the 5% that don't will at least see the font `swap`.
 
 ## Results
 Before:
