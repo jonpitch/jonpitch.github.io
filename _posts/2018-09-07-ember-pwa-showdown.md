@@ -88,3 +88,4 @@ Up next, lazy load locales to drop another **45 kB**.
 - [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
 - [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %}) _(you are here)_
 - [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %})
+- [Service Worker]({% post_url 2018-09-09-ember-pwa-service-worker %})

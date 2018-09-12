@@ -85,7 +85,9 @@ The browser will try and render content with fonts in this order. Because we use
 `swap` was ok, but we can use [preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content) to inform the browser that these resources will be needed right away. I can move my fonts in the the `<head>` as:
 
 ```html
+{% raw %}
 <link rel="preload" href="{{rootURL}path/to/my/font.woff2" as="font" type="font/woff2" crossorigin>
+{% endraw %}
 ```
 
 Not all of my supported browsers actual [support preload](https://caniuse.com/#search=preload). 95% of my users have a supported browser, so the 5% that don't will at least see the font `swap`.
@@ -112,3 +114,4 @@ Moving on, why the hell is there **65 kB** of `lodash` in my vendor build?
 - [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
 - [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %})
 - [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %})
+- [Service Worker]({% post_url 2018-09-09-ember-pwa-service-worker %})

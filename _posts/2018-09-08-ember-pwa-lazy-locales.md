@@ -149,3 +149,4 @@ Lighthouse is still bothering me about loading fonts, so let's revisit that next
 - [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
 - [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %}) 
 - [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %}) _(you are here)_
+- [Service Worker]({% post_url 2018-09-09-ember-pwa-service-worker %})

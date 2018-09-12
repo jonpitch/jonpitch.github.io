@@ -116,3 +116,4 @@ After refactoring my animation, removing `liquid-fire` and `velocity-animate` fr
 - [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
 - [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %})
 - [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %})
+- [Service Worker]({% post_url 2018-09-09-ember-pwa-service-worker %})
