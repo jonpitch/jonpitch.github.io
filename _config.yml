@@ -6,7 +6,7 @@ permalink:        pretty
 title:            Jon Pitcherella
 tagline:          'Developer. Home Brewer.'
 description:      'Great developer.<br />Home brewer and metal head.<br />Writer of haiku.'
-url:              http://jonpitcherella.com
+url:              https://jonpitcherella.com
 baseurl:          /
 brand-color:      '#202020'
 
@@ -14,7 +14,7 @@ excerpt_separator:  <!--more-->
 
 author:
   name:           'Jon Pitcherella'
-  url:            http://jonpitcherella.com
+  url:            https://jonpitcherella.com
 
 paginate:         5
 
