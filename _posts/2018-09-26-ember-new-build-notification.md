@@ -2,6 +2,7 @@
 layout: post
 title: Adding a new build notification to an Ember application
 tags: [ember, web-development, javascript, progressive-web]
+medium: https://medium.com/@jonpitch/adding-a-new-build-notification-to-an-ember-application-c657211289f6
 ---
 
 Continuous deployment of your Ember app is great; users with stale builds isn't as great. Let's take a look at building a new build notification using a service worker.
