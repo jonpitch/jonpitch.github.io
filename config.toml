@@ -1,0 +1,4 @@
+baseURL = 'https://jonpitcherella.com/'
+languageCode = 'en-US'
+title = 'Jon Pitcherella'
+copyright = 'copyright Jon Pitcherella {year}'

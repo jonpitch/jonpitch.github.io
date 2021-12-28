@@ -1,0 +1,11 @@
+[[redirects]]
+    from = "/blog/tag/*"
+    to = "/" # TODO
+    status = 301
+    force = true
+
+# http://localhost:1313/sitemap.xml
+
+# https://docs.netlify.com/routing/redirects/redirect-options/
+# - /2018/09/26/ember-new-build-notification/
+# - /page2
