@@ -4,7 +4,6 @@ date: 2015-03-26T00:00:00-05:00
 draft: false
 medium: https://medium.com/@jonpitch/recruiting-developers-b8114cec6c54
 tags: [misc, medium]
-url: "posts/recruiters-doing-it-wrong"
 ---
 
 Recruiters have a tough job, especially when it comes to placing software developers. I would also imagine any sales/commission based job is a difficult one, because it's simply a skill that I'm just bad at. Having said that, recruiting software developers has become a miserable experience for all parties involved.

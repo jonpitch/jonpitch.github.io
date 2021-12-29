@@ -3,7 +3,6 @@ title: "Codeception Acceptance Tests - Using Multiple Databases"
 date: 2014-03-21T00:00:00-05:00
 draft: false
 tags: [codeception, testing]
-url: "posts/codeception-acceptance-tests-using-multiple-databases"
 ---
 
 [Codeception](http://codeception.com/) is a great PHP testing framework and I would highly recommend it to anyone that needs functional, unit or acceptance testing, even if your application isn't PHP based. Not only does it give you a lot out of the box, but it's very modular and extensible.

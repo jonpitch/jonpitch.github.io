@@ -3,7 +3,6 @@ title: "Why Ember is the Cat's Pajamas"
 date: 2015-03-17T00:00:00-05:00
 draft: false
 tags: [ember, web-development, javascript]
-url: "posts/why-ember-is-the-cats-pajamas"
 ---
 
 If you have recently blinked, it's likely that you have missed the plethora of web development tools, frameworks, etc. There is one in particular that has my full attention however, [Ember](http://emberjs.com/).

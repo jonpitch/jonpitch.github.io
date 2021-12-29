@@ -3,7 +3,6 @@ title: "Android ListView Optimization"
 date: 2013-06-12T00:00:00-05:00
 draft: false
 tags: [android, mobile]
-url: "posts/android-listview-optimization"
 ---
 
 When building a ListView in Android, 9 times out of 10 it's likely that you're using a custom Adapter to bind data to your list. By introducing the ViewHolder pattern into your Adapter, you can increase the performance of your ListView substantially. 

@@ -4,7 +4,6 @@ date: 2015-06-13T00:00:00-05:00
 draft: false
 medium: https://medium.com/@jonpitch/put-some-fiber-in-your-dump-b15d9c9283fa
 tags: [codeception, devops, testing]
-url: "posts/codeception-dump-made-easy"
 ---
 
 First, if you're a software developer and not writing tests, please either start immediately or quit your job forever.

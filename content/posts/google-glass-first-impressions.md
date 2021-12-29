@@ -3,7 +3,6 @@ title: "Google Glass First Impressions"
 date: 2013-12-04T00:00:00-05:00
 draft: false
 tags: [products, misc]
-url: "posts/google-glass-first-impressions"
 ---
 
 My interest in Google Glass was mostly for development, given its radically different experience and very interesting potential use cases. I was also very interested in the device from a societal standpoint in the sense that Glass is so new, people aren't fully aware of them yet like they are with mobile phones.

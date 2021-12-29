@@ -4,7 +4,6 @@ date: 2015-04-11T00:00:00-05:00
 draft: false
 medium: https://medium.com/@jonpitch/ember-amp-firebase-58-go-where-eagles-dare-a76b08add035
 tags: [ember, firebase, web-development, javascript, medium]
-url: "posts/ember-firebase-go-where-eagles-dare"
 ---
 
 At a recent [EmberJS Philly](http://www.meetup.com/EmberJS-Philly/) meetup, Brendan O'Hara ([&commat;BrendanOHara](https://twitter.com/BrendanOHara)) gave a great overview of [Ember](http://emberjs.com) and [Firebase](https://www.firebase.com/) (via [EmberFire](https://github.com/firebase/emberfire)). 

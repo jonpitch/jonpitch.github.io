@@ -4,7 +4,6 @@ date: 2016-08-28T00:00:00-05:00
 draft: false
 tags: [web-development, localization, products, medium]
 medium: https://medium.com/@jonpitch localization-is-hard-heres-how-we-solved-it-52dad61bfce3
-url: "posts/solving-localization"
 ---
 
 Localization is hard because language is hard. What makes localization especially challenging is that words and sentences can't be approached in a vacuum by a translator. The more context you can provide, the better. For example, imagine a label on a web page that just read: `High`. If you're the translator looking at the word, are we trying to convey height? Some sort of drug state?

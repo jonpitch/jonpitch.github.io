@@ -3,7 +3,6 @@ title: "Android Overdraw Optimization"
 date: 2013-06-12T00:00:00-05:00
 draft: false
 tags: [android, mobile]
-url: "posts/android-overdraw-optimization"
 ---
 
 Overdraw is painting a pixel more than once and it's very easy to overlook when building an Android application.

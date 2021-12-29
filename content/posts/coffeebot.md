@@ -4,7 +4,6 @@ date: 2017-04-30T00:00:00-05:00
 draft: false
 tags: [web-development, javascript, raspberry-pi, medium]
 medium: https://medium.com/@jonpitch/building-a-coffee-bot-61b6a41fa2cb
-url: "posts/coffeebot"
 ---
 
 The coffee situation in a crowded office can be difficult. If you don't get the jump on a fresh pot of coffee, you might miss out entirely. Enter coffeebot.

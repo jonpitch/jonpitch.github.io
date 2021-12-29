@@ -16,8 +16,12 @@ TODO
 
 # to do list - delete
 
-- design
-- netlify redirects
-- gh actions
-- netlify build
+- nested urls not there
+- drop jekyll relative urls
+- google analytics
 - service worker
+- pwa
+- design
+- gh actions?
+- netlify build
+- netlify lighthouse

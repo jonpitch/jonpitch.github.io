@@ -4,7 +4,6 @@ date: 2016-07-27T00:00:00-05:00
 draft: false
 medium: https://medium.com/@jonpitch write-better-ember-tests-d2e22fb76bf2
 tags: [web-development, ember, javascript, testing, medium]
-url: "posts/write-better-ember-tests"
 ---
 
 If you're not testing your code, well, you've got some nerve. For the rest of us rational people, let's look at some basic tips for writing better Ember tests.

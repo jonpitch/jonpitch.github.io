@@ -4,7 +4,6 @@ date: 2015-05-30T00:00:00-05:00
 draft: false
 medium: https://medium.com/@jonpitch/building-a-software-product-colon-lessons-learned-2d4e61cea6ea
 tags: [products, medium]
-url: "posts/product-lessons-learned"
 ---
 
 I spent a good portion of my spare time over the last few years working on a side project. For this particular project I formed an LLC, opened a bank account, existed on multiple social media platforms, had both an iOS and Android app and so forth. Now I can't wait to shut it all down.

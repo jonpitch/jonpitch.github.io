@@ -3,7 +3,6 @@ title: "Mobile Caching Strategy"
 date: 2013-09-23T00:00:00-05:00
 draft: false
 tags: [mobile]
-url: "posts/mobile-cachine-strategy"
 ---
 
 Caching in a mobile application serves two important purposes and a good caching strategy should cover both:
