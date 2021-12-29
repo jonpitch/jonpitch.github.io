@@ -16,9 +16,8 @@ TODO
 
 # to do list - delete
 
-- service worker
-- pwa
 - design
+- sw register urls
 - gh actions?
 - netlify build
 - netlify lighthouse
