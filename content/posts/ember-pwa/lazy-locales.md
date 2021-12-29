@@ -123,15 +123,15 @@ It's absolutely critical that you use a CDN to upload your assets. At the time, 
 ## Results
 Our previous build and lighthouse:
 
-![Post-Showdown - Build](images/post-showdown-build.png "Post-Showdown - Build")
+![Post-Showdown - Build](../images/post-showdown-build.png "Post-Showdown - Build")
 
-![Post-Showdown - Lighthouse](images/showdown-mono-lighthouse.png "Post-Showdown - Lighthouse")
+![Post-Showdown - Lighthouse](../images/showdown-mono-lighthouse.png "Post-Showdown - Lighthouse")
 
 After:
 
-![Lazy Locales - Build](images/lazy-locales-build.png "Lazy Locales - Build")
+![Lazy Locales - Build](../images/lazy-locales-build.png "Lazy Locales - Build")
 
-![Lazy Locales - Lighthouse](images/lazy-locales-lighthouse.png "Lazy Locales - Lighthouse")
+![Lazy Locales - Lighthouse](../images/lazy-locales-lighthouse.png "Lazy Locales - Lighthouse")
 
 This is great, we dropped **74 kB** from our application build (not vendor build), which was half of our entire application. The tradeoff here is users now incur an additional web request to fetch initial content.
 
@@ -140,12 +140,12 @@ The first meaningful paint time has dropped lower to 4.3 seconds. Our JavaScript
 Lighthouse is still bothering me about loading fonts, so let's revisit that next.
 
 ## Keep reading
-- [Baseline]({% post_url 2018-09-01-ember-pwa-baseline %})
-- [Add web manifest]({% post_url 2018-09-02-ember-pwa-manifest %})
-- [Remove liquid fire]({% post_url 2018-09-03-ember-pwa-no-liquid-fire %}) 
-- [Bundle web fonts]({% post_url 2018-09-04-ember-pwa-include-web-fonts %}) 
-- [Random Lodash]({% post_url 2018-09-05-ember-pwa-random-lodash %})
-- [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
-- [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %}) 
-- [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %}) _(you are here)_
-- [Service Worker]({% post_url 2018-09-09-ember-pwa-service-worker %})
+- [Baseline]({{< ref "/posts/ember-pwa/baseline" >}} "baseline")
+- [Add web manifest]({{< ref "/posts/ember-pwa/manifest" >}} "web manifest")
+- [Remove liquid fire]({{< ref "/posts/ember-pwa/no-liquid-fire" >}} "remove liquid fire") 
+- [Bundle web fonts]({{< ref "/posts/ember-pwa/web-fonts" >}} "web fonts") 
+- [Random lodash]({{< ref "/posts/ember-pwa/random-lodash" >}} "random lodash")
+- [Moment Timezones]({{< ref "/posts/ember-pwa/moment-timezones" >}} "moment timezones")
+- [Remove Showdown]({{< ref "/posts/ember-pwa/showdown" >}} "remove showdown") 
+- [Lazy Locales]({{< ref "/posts/ember-pwa/lazy-locales" >}} "lazy locales") _(you are here)_
+- [Service worker]({{< ref "/posts/ember-pwa/service-worker" >}} "service worker")

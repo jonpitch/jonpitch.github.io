@@ -134,13 +134,13 @@
 
 [[redirects]]
     from = "/2017/01/02/danger-brewing-javascript-powered-kegerator-build"
-    to = "/posts/danger-brewing-javascript-powered-kegerator-build"
+    to = "/posts/danger-brewing-javascript-powered-kegerator-build/build"
     status = 301
     force = true
 
 [[redirects]]
     from = "/2017/01/02/danger-brewing-javascript-powered-kegerator-tech"
-    to = "/posts/danger-brewing-javascript-powered-kegerator-build"
+    to = "/posts/danger-brewing-javascript-powered-kegerator-build/tech"
     status = 301
     force = true
 

@@ -98,21 +98,21 @@ You will also need some basic CSS to make this work:
 ## Results
 My vendor build before:
 
-![Baseline Build](images/baseline-build.png "Baseline - Build")
+![Baseline Build](../images/baseline-build.png "Baseline - Build")
 
 After refactoring my animation, removing `liquid-fire` and `velocity-animate` from my vendor build:
 
-![No Liquid Fire - Build](images/no-liquid-fire-build.png "No Liquid Fire - Build")
+![No Liquid Fire - Build](../images/no-liquid-fire-build.png "No Liquid Fire - Build")
 
 **27 kB** removed! Up next, lets optimize our web font loading.
 
 ## Keep reading
-- [Baseline]({% post_url 2018-09-01-ember-pwa-baseline %}) 
-- [Add web manifest]({% post_url 2018-09-02-ember-pwa-manifest %}) 
-- [Remove liquid fire]({% post_url 2018-09-03-ember-pwa-no-liquid-fire %}) _(you are here)_
-- [Bundle web fonts]({% post_url 2018-09-04-ember-pwa-include-web-fonts %}) 
-- [Random Lodash]({% post_url 2018-09-05-ember-pwa-random-lodash %})
-- [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
-- [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %})
-- [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %})
-- [Service Worker]({% post_url 2018-09-09-ember-pwa-service-worker %})
+- [Baseline]({{< ref "/posts/ember-pwa/baseline" >}} "baseline") 
+- [Add web manifest]({{< ref "/posts/ember-pwa/manifest" >}} "web manifest") 
+- [Remove liquid fire]({{< ref "/posts/ember-pwa/no-liquid-fire" >}} "remove liquid fire") _(you are here)_
+- [Bundle web fonts]({{< ref "/posts/ember-pwa/web-fonts" >}} "web fonts") 
+- [Random lodash]({{< ref "/posts/ember-pwa/random-lodash" >}} "random lodash")
+- [Moment Timezones]({{< ref "/posts/ember-pwa/moment-timezones" >}} "moment timezones")
+- [Remove Showdown]({{< ref "/posts/ember-pwa/showdown" >}} "remove showdown")
+- [Lazy Locales]({{< ref "/posts/ember-pwa/lazy-locales" >}} "lazy locales")
+- [Service worker]({{< ref "/posts/ember-pwa/service-worker" >}} "service worker")

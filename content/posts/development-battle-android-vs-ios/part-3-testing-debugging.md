@@ -45,4 +45,4 @@ The Android emulator is awful and the iOS simulator is quite lovely. Not being a
 
 Both platforms had their strong and weak points, but there wasn't a clear winner in my opinion.
 
-Up next, we'll take a look at the deployment process. *coming soon*
+Up next, we'll take a look at the [deployment process]({{< ref "/posts/development-battle-android-vs-ios/part-4-deployments-analytics-metrics" >}} "deployments and metrics").

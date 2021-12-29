@@ -10,9 +10,9 @@ This is part three of three in a story about a completely unnecessary, over-engi
 
 <!--more-->
 
-![Danger Brewing](images/cover.jpeg "The end result — A dope looking JavaScript powered beer dispensing piece of madness.")
+![Danger Brewing](../images/cover.jpeg "The end result — A dope looking JavaScript powered beer dispensing piece of madness.")
 
-As mentioned in the [overview]({% post_url 2017-01-01-danger-brewing-javascript-powered-kegerator-overview %}), there were a lot of ways I could have went about this build. For example:
+As mentioned in the [overview]({{< ref "/posts/danger-brewing-javascript-powered-kegerator-build" >}} "danger brewing overview"), there were a lot of ways I could have went about this build. For example:
 
 * [Kegbot](https://kegbot.org/)
 * [Raspberry Pints](http://raspberrypints.com/)
@@ -27,7 +27,7 @@ I don’t have a lot of experience with electronics, so I wanted to spend most o
 
 My first major architecture decision was to leverage [Firebase](https://firebase.google.com/). If you’re not familiar with it, it’s basically a “back end as a service” that also specializes in real-time data (sockets). So I need my kegerator to send data to Firebase and I need my web app / mobile app to read data from Firebase.
 
-I decided to go the web application route for the user facing side of things since it would be more available to everyone and I could just leverage my knowledge of Ember to build something fast ([Ember is awesome by the way]({% post_url 2016-01-18-ember-get-more-done %})). But at the same time, I wanted to explore some new areas of Ember, particularly [Fastboot](https://ember-fastboot.com/) (server side rendering).
+I decided to go the web application route for the user facing side of things since it would be more available to everyone and I could just leverage my knowledge of Ember to build something fast ([Ember is awesome by the way]({{< ref "/posts/ember-get-more-done" >}} "ember is awesome")). But at the same time, I wanted to explore some new areas of Ember, particularly [Fastboot](https://ember-fastboot.com/) (server side rendering).
 
 For the data collection, I stumbled across [Johnny Five](http://johnny-five.io/). Johnny Five seemed awesome. Building robots in JavaScript? Sold.
 
@@ -47,7 +47,7 @@ There weren’t any particular reasons why I chose those sensors. In hindsight, 
 
 The rest of building the prototype is just what you would expect; connecting things to the pi and breadboard, writing code and seeing what data I would get. Here’s what it looked like in its final prototype state:
 
-![Prototype](images/tech-1.jpeg "The working prototype")
+![Prototype](../images/tech-1.jpeg "The working prototype")
 
 There’s a much more in depth overview of setting up my Raspberry Pi and all of the sensors on the [README](https://github.com/jonpitch/danger-brewing-hub) of the repository.
 
@@ -60,11 +60,11 @@ Next comes the nerve-wrecking part, cutting all the wires so I could make it per
 ## Making It Real
 Before making the prototype permanent, I had to assemble my liquid lines. First, wrap each flow meter with a substantial amount of teflon tape (I learned that lesson the hard way) and [these](https://www.amazon.com/dp/B008TT393O) barbed fittings. Get an idea of where you want the flow meter to sit within the kegerator (I chose near the keg) and cut your beer lines. If your beer line interior diameter is physically smaller than 1/4", make your life easier but sitting your beer lines in warm water for a minute or two before attaching to the barbed fitting. Ultimately, you should have something like this:
 
-![Barbed](images/tech-2.jpeg "Be aggressive with the teflon tape.")
+![Barbed](../images/tech-2.jpeg "Be aggressive with the teflon tape.")
 
 **Pro Tip**: Make sure you take note of which direction the flow is supposed to go before making your lines.
 
-![Complete Line](images/tech-3.jpeg "A finished beer line. As you can see, I did not follow my own advice.")
+![Complete Line](../images/tech-3.jpeg "A finished beer line. As you can see, I did not follow my own advice.")
 
 Now we need to turn the breadboard prototype into a real circuit. For this I bought a project box and some perf board. There are plenty of options out there for these. I went with a larger project board so the Cobbler could travel with the circuit to make my life easier.
 
@@ -72,17 +72,17 @@ Muster up some courage and cut all of your sensors.
 
 Assemble any way you see fit, here’s an overview of how my circuit came together:
 
-![Perf Layout](images/tech-4.jpeg "Most wires are underneath — gotta have a clean look in your kegerator circuit…")
+![Perf Layout](../images/tech-4.jpeg "Most wires are underneath — gotta have a clean look in your kegerator circuit…")
 
-![Underside Perf](images/tech-5.jpeg "Not as clean.")
+![Underside Perf](../images/tech-5.jpeg "Not as clean.")
 
-![Inside Project Box](images/tech-6.jpeg "The circuit in its forever home.")
+![Inside Project Box](../images/tech-6.jpeg "The circuit in its forever home.")
 
 After your circuit is made, it’s **incredibly** important that you take very careful notes as to what wire is soldered where. Triple check if you have to, it’ll be a lot more difficult to troubleshoot once it’s physically in the kegerator.
 
-If you read the [overview]({% post_url 2017-01-01-danger-brewing-javascript-powered-kegerator-overview %}) or [build overview]({% post_url 2017-01-02-danger-brewing-javascript-powered-kegerator-build %}), you’ll remember there’s a cavity between the freezer lid and the kegerator lid. This is where my circuit is going, out of sight.
+If you read the [overview]({{< ref "/posts/danger-brewing-javascript-powered-kegerator-build" >}} "danger brewing overview") or [build overview]({{< ref "/posts/danger-brewing-javascript-powered-kegerator-build/build" >}} "build overview"), you’ll remember there’s a cavity between the freezer lid and the kegerator lid. This is where my circuit is going, out of sight.
 
-![Lid Cavity](images/tech-7.jpeg "Ultimately everything is tucked away — except the Pi. Stealth mode.")
+![Lid Cavity](../images/tech-7.jpeg "Ultimately everything is tucked away — except the Pi. Stealth mode.")
 
 It’s in a large cavity with the freezer temperature controller, a power strip and the power adapter for my freezer air flow fan. There are two cuts in the project box:
 
@@ -91,17 +91,17 @@ It’s in a large cavity with the freezer temperature controller, a power strip 
 
 If you’re not good at soldering, you’re about to be. Get enough wire to run all of your sensors into the freezer and solder your connections.
 
-![Running Lines](images/tech-8.jpeg "Braiding the wires made them a little easier to work with.")
+![Running Lines](../images/tech-8.jpeg "Braiding the wires made them a little easier to work with.")
 
 For my DS18B20 sensor (the one that’s physically in the freezer), I put it in a travel shampoo container filled with rubbing alcohol. The alcohol won’t freeze and it’ll provide a more consistent temperature reading.
 
-![Temperature Sensors](images/tech-9.jpeg "Bottom left corner — two temperature sensors in travel containers.")
+![Temperature Sensors](../images/tech-9.jpeg "Bottom left corner — two temperature sensors in travel containers.")
 
 Re-attach your flow meter runs to their liquid lines and you should be done with your electronics. This is where you probably want to turn things on and make sure you soldering everything OK, things still work with Firebase, etc.
 
 As far as testing the liquid lines, that’s hard to do until there’s actually liquid (beer hopefully) in your keg. I didn’t actually test these out until the entire build was done and I carbonated my homebrew to serve. For the record, it was probably the best thing I ever had to debug: *Making sure the flow meters poured the right amount of beer*. It was a few hours of sitting in the basement with a measuring cup, pouring variable amounts of beer and calibrating the sensor. After all, I think it was Ben Franklin who said:
 
-> "Wasting beer is totally the worst thing a human can ever do."
+> "Wasting beer is totally the worst thing a human can ever do."
 
 I’m no historian, but I’m pretty sure that’s accurate.
 
@@ -115,6 +115,6 @@ Feel free to contribute or help out in some way. If you’d like to see the proj
 
 If you have any questions, comments, etc. I’d love to hear them.
 
-Don’t forget to check out the [overview]({% post_url 2017-01-01-danger-brewing-javascript-powered-kegerator-overview %}) of the entire project or the more in detail look at the [build process]({% post_url 2017-01-02-danger-brewing-javascript-powered-kegerator-build %}).
+Don’t forget to check out the [overview]({{< ref "/posts/danger-brewing-javascript-powered-kegerator-build" >}} "danger brewing overview") of the entire project or the more in detail look at the [build process]({{< ref "/posts/danger-brewing-javascript-powered-kegerator-build/build" >}} "build overview").
 
 Cheers!

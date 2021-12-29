@@ -16,8 +16,6 @@ TODO
 
 # to do list - delete
 
-- nested urls not there
-- drop jekyll relative urls
 - google analytics
 - service worker
 - pwa

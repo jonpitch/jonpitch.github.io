@@ -48,8 +48,8 @@ I update my `ember-cli-build.js` file with:
     lenientErrors: true,
     include: [
         'assets/*',
-        'images/**/*',
-        'images/*',
+        '../images/**/*',
+        '../images/*',
         'manifest/**/*',
         'manifest/*',
         'translations/*'
@@ -72,7 +72,7 @@ It looks like there are a few issues:
 - There's no web manifest
 - No content is provided when the application is offline
 
-I distinctly remember [adding a web manifest]({% post_url 2018-09-02-ember-pwa-manifest %}). The issue here lies with my approach to deliver the localized web manifest. Because I am adding it to the `<head>` after Ember boots, this means my cached `index.html` file, which was cached before Ember booted, has no reference to this file.
+I distinctly remember [adding a web manifest]({{< ref "/posts/ember-pwa/manifest" >}} "web manifest"). The issue here lies with my approach to deliver the localized web manifest. Because I am adding it to the `<head>` after Ember boots, this means my cached `index.html` file, which was cached before Ember booted, has no reference to this file.
 
 I'm not really sure what to do here. I would have to know my user's locale ahead of the application loading. I think I'll have to circle back to this, but for now, I'll add the English manifest to the head and update the URL after boot with the localized variant. Something like:
 
@@ -177,15 +177,15 @@ While this works as expected, this interaction is likely very specific to your a
 
 ## Results
 
-TO DO
+_it looks like when i originally wrote this post, i forgot to include the results. unfortunately, i no longer have them, and too much time has passed to replicate the results._
 
 ## Keep reading
-- [Baseline]({% post_url 2018-09-01-ember-pwa-baseline %})
-- [Add web manifest]({% post_url 2018-09-02-ember-pwa-manifest %})
-- [Remove liquid fire]({% post_url 2018-09-03-ember-pwa-no-liquid-fire %}) 
-- [Bundle web fonts]({% post_url 2018-09-04-ember-pwa-include-web-fonts %}) 
-- [Random Lodash]({% post_url 2018-09-05-ember-pwa-random-lodash %})
-- [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
-- [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %}) 
-- [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %}) 
-- [Service Worker]({% post_url 2018-09-09-ember-pwa-service-worker %}) _(you are here)_
+- [Baseline]({{< ref "/posts/ember-pwa/baseline" >}} "baseline")
+- [Add web manifest]({{< ref "/posts/ember-pwa/manifest" >}} "web manifest")
+- [Remove liquid fire]({{< ref "/posts/ember-pwa/no-liquid-fire" >}} "remove liquid fire") 
+- [Bundle web fonts]({{< ref "/posts/ember-pwa/web-fonts" >}} "web fonts") 
+- [Random lodash]({{< ref "/posts/ember-pwa/random-lodash" >}} "random lodash")
+- [Moment Timezones]({{< ref "/posts/ember-pwa/moment-timezones" >}} "moment timezones")
+- [Remove Showdown]({{< ref "/posts/ember-pwa/showdown" >}} "remove showdown") 
+- [Lazy Locales]({{< ref "/posts/ember-pwa/lazy-locales" >}} "lazy locales") 
+- [Service worker]({{< ref "/posts/ember-pwa/service-worker" >}} "service worker") _(you are here)_

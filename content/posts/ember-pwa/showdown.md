@@ -11,11 +11,11 @@ Part three: Remove Showdown
 <!--more-->
 
 ## Resetting the baseline
-Since the [last post]({% post_url 2018-09-06-ember-pwa-moment-timezones %}), my application had some features released and some refactoring that had an impact on our build size.
+Since the [last post]({{< ref "/posts/ember-pwa/moment-timezones" >}} "moment timezones"), my application had some features released and some refactoring that had an impact on our build size.
 
 Here's the updated build:
 
-![Pre-Showdown - Build](images/pre-showdown-build.png "Pre-Showdown - Build")
+![Pre-Showdown - Build](../images/pre-showdown-build.png "Pre-Showdown - Build")
 
 Our application moved in to a [yarn workspace](https://yarnpkg.com/en/docs/workspaces) as part of a mono-repo and some other legacy code was removed. Interestingly, some dependency sizes went down after consolidation. Showdown is one of them. At our initial baseline, Showdown weighed in at **20 kB**, but now is around **10 kB**.
 
@@ -66,11 +66,11 @@ Then to use:
 {{< /highlight >}}
 
 ## Result
-![Post-Showdown - Build](images/post-showdown-build.png "Post-Showdown - Build")
+![Post-Showdown - Build](../images/post-showdown-build.png "Post-Showdown - Build")
 
 Not only did we lose **10 kB** here, but some dependency consolidation and dead code removal had a tremendous impact on our Lighthouse score.
 
-![Post-Showdown - Lighthouse](images/showdown-mono-lighthouse.png "Post-Showdown - Lighthouse")
+![Post-Showdown - Lighthouse](../images/showdown-mono-lighthouse.png "Post-Showdown - Lighthouse")
 
 _note: ignore the SEO drop, this was a bug from the mono-repo change not serving robots.txt correctly_
 
@@ -79,12 +79,12 @@ Our performance score has almost doubled and our first meaningful paint is final
 Up next, lazy load locales to drop another **45 kB**.
 
 ## Keep reading
-- [Baseline]({% post_url 2018-09-01-ember-pwa-baseline %})
-- [Add web manifest]({% post_url 2018-09-02-ember-pwa-manifest %})
-- [Remove liquid fire]({% post_url 2018-09-03-ember-pwa-no-liquid-fire %}) 
-- [Bundle web fonts]({% post_url 2018-09-04-ember-pwa-include-web-fonts %}) 
-- [Random Lodash]({% post_url 2018-09-05-ember-pwa-random-lodash %})
-- [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
-- [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %}) _(you are here)_
-- [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %})
-- [Service Worker]({% post_url 2018-09-09-ember-pwa-service-worker %})
+- [Baseline]({{< ref "/posts/ember-pwa/baseline" >}} "baseline")
+- [Add web manifest]({{< ref "/posts/ember-pwa/manifest" >}} "web manifest")
+- [Remove liquid fire]({{< ref "/posts/ember-pwa/no-liquid-fire" >}} "remove liquid fire") 
+- [Bundle web fonts]({{< ref "/posts/ember-pwa/web-fonts" >}} "web fonts") 
+- [Random lodash]({{< ref "/posts/ember-pwa/random-lodash" >}} "random lodash")
+- [Moment Timezones]({{< ref "/posts/ember-pwa/moment-timezones" >}} "moment timezones")
+- [Remove Showdown]({{< ref "/posts/ember-pwa/showdown" >}} "remove showdown") _(you are here)_
+- [Lazy Locales]({{< ref "/posts/ember-pwa/lazy-locales" >}} "lazy locales")
+- [Service worker]({{< ref "/posts/ember-pwa/service-worker" >}} "service worker")

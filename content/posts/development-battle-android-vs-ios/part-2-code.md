@@ -118,4 +118,4 @@ If I had to chose a preference, Java or Swift would be a draw, which is saying a
 
 What are your thoughts? Do you like/dislike one language more than the other? I also glanced over a lot, like namespaces, callbacks, etc., is there anything you find appealing/unappealing of one vs. the other?
 
-Next, [testing and debugging in both platforms](/2015/03/24/development-battle-android-vs-ios-part3/).
+Next, [testing and debugging in both platforms]({{< ref "/posts/development-battle-android-vs-ios/part-3-testing-debugging" >}} "testing and debugging").

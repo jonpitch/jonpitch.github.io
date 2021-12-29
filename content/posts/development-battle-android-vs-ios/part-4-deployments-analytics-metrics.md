@@ -80,4 +80,4 @@ The deployment process for both platforms are largely the same, just different f
 
 What do you think? Are there benefits of iTunes Connect that I missed? Has Google Developer Console been helpful?
 
-Next, [the thrilling conclusion](/2015/04/19/development-battle-android-vs-ios-part5).
+Next, [the thrilling conclusion]({{< ref "/posts/development-battle-android-vs-ios/part-5-summary" >}} "summary").

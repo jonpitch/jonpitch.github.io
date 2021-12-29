@@ -17,5 +17,5 @@ By simply adding the following meta tag to the head of your page:
 
 For a trivial amount of effort, there's a very nice benefit for Chrome v39+ for Android:
 
-![stack view](images/1.png)
-![web view](images/2.png)
+![stack view](../images/1.png)
+![web view](../images/2.png)

@@ -13,7 +13,7 @@ Part three: Moment Timezones
 ## This will be quick
 In my latest build, we still see some **12 kB** for `moment.js` and a whopping **43 kB** for `tz.min.js` (moment timezones).
 
-![No Lodash - Build](images/no-lodash-build.png "No Lodash - Build")
+![No Lodash - Build](../images/no-lodash-build.png "No Lodash - Build")
 
 What on earth could **43 kB** of JavaScript related to timezones possibly be?
 
@@ -43,21 +43,21 @@ drops some significant kilobytes. I feel ridiculous for missing that initially, 
 ## Results
 Before:
 
-![No Lodash - Build](images/no-lodash-build.png "No Lodash - Build")
+![No Lodash - Build](../images/no-lodash-build.png "No Lodash - Build")
 
 After:
 
-![No moment timezones - Build](images/moment-build.png "No moment timezones - Build")
+![No moment timezones - Build](../images/moment-build.png "No moment timezones - Build")
 
 Up next, I'll see if I can replace [ember-cli-showdown](https://github.com/gcollazo/ember-cli-showdown) to save another **23 kB**.
 
 ## Keep reading
-- [Baseline]({% post_url 2018-09-01-ember-pwa-baseline %})
-- [Add web manifest]({% post_url 2018-09-02-ember-pwa-manifest %})
-- [Remove liquid fire]({% post_url 2018-09-03-ember-pwa-no-liquid-fire %}) 
-- [Bundle web fonts]({% post_url 2018-09-04-ember-pwa-include-web-fonts %}) 
-- [Random Lodash]({% post_url 2018-09-05-ember-pwa-random-lodash %})
-- [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %}) _(you are here)_
-- [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %})
-- [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %})
-- [Service Worker]({% post_url 2018-09-09-ember-pwa-service-worker %})
+- [Baseline]({{< ref "/posts/ember-pwa/baseline" >}} "baseline")
+- [Add web manifest]({{< ref "/posts/ember-pwa/manifest" >}} "web manifest")
+- [Remove liquid fire]({{< ref "/posts/ember-pwa/no-liquid-fire" >}} "remove liquid fire") 
+- [Bundle web fonts]({{< ref "/posts/ember-pwa/web-fonts" >}} "web fonts") 
+- [Random lodash]({{< ref "/posts/ember-pwa/random-lodash" >}} "random lodash")
+- [Moment Timezones]({{< ref "/posts/ember-pwa/moment-timezones" >}} "moment timezones") _(you are here)_
+- [Remove Showdown]({{< ref "/posts/ember-pwa/showdown" >}} "remove showdown")
+- [Lazy Locales]({{< ref "/posts/ember-pwa/lazy-locales" >}} "lazy locales")
+- [Service worker]({{< ref "/posts/ember-pwa/service-worker" >}} "service worker")

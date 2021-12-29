@@ -29,7 +29,7 @@ I'll be using a few tools through this journey that are critical to measuring su
 
 I want to start with a baseline of what Lighthouse thinks of my application. 
 
-![Baseline Lighthouse](images/baseline-lighthouse.png "Baseline - Lighthouse")
+![Baseline Lighthouse](../images/baseline-lighthouse.png "Baseline - Lighthouse")
 
 I'm not that surprised to see _Progressive Web App_ or _Accessibility_ where it is, but _Performance_ is really poor. Notable poor performers are first meaningful paint, at a brutal **9.1 seconds** and there's a lot of main thread work parsing JavaScript. Let's dive in to just how much JavaScript are we talking about. I'll run `broccoli-concat-analyser` on the `production` build of my application to see where my size comes from exactly:
 
@@ -39,7 +39,7 @@ I'm not that surprised to see _Progressive Web App_ or _Accessibility_ where it 
 
 Here is the result:
 
-![Baseline Build](images/baseline-build.png "Baseline - Build")
+![Baseline Build](../images/baseline-build.png "Baseline - Build")
 
 What you're looking at is a breakdown of where JavaScript size comes from. Ember and jQuery are obvious eye catchers, but there are a lot of surprises in there as well. For example, my application doesn't use `lodash`, but it's included in my vendor build for some reason at a whopping **65 kB**. Moment accounts for around **40 kB**. Showdown is another huge offender at **21 Kb**.
 
@@ -65,12 +65,12 @@ Most PWA guides for Ember will tell you to start by removing jQuery. It's about 
 Let's get to work.
 
 ## Keep reading
-- [Baseline]({% post_url 2018-09-01-ember-pwa-baseline %}) _(you are here)_
-- [Add web manifest]({% post_url 2018-09-02-ember-pwa-manifest %})
-- [Remove liquid fire]({% post_url 2018-09-03-ember-pwa-no-liquid-fire %}) 
-- [Bundle web fonts]({% post_url 2018-09-04-ember-pwa-include-web-fonts %}) 
-- [Random Lodash]({% post_url 2018-09-05-ember-pwa-random-lodash %})
-- [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
-- [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %})
-- [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %})
-- [Service Worker]({% post_url 2018-09-09-ember-pwa-service-worker %})
+- [Baseline]({{< ref "/posts/ember-pwa/baseline" >}} "baseline") _(you are here)_
+- [Add web manifest]({{< ref "/posts/ember-pwa/manifest" >}} "web manifest")
+- [Remove liquid fire]({{< ref "/posts/ember-pwa/no-liquid-fire" >}} "remove liquid fire") 
+- [Bundle web fonts]({{< ref "/posts/ember-pwa/web-fonts" >}} "web fonts") 
+- [Random lodash]({{< ref "/posts/ember-pwa/random-lodash" >}} "random lodash")
+- [Moment Timezones]({{< ref "/posts/ember-pwa/moment-timezones" >}} "moment timezones")
+- [Remove Showdown]({{< ref "/posts/ember-pwa/showdown" >}} "remove showdown")
+- [Lazy Locales]({{< ref "/posts/ember-pwa/lazy-locales" >}} "lazy locales")
+- [Service worker]({{< ref "/posts/ember-pwa/service-worker" >}} "service worker")

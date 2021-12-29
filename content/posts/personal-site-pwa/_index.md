@@ -31,13 +31,13 @@ At the start of this project, this site is:
 
 Here's that baseline score:
 
-![GitHub Pages](images/github-pages-lighthouse.png "GitHub Pages - Lighthouse")
+![GitHub Pages](../images/github-pages-lighthouse.png "GitHub Pages - Lighthouse")
 
 I'm immediately docked points for not using HTTPS. As of this blog post, GitHub does not offer HTTPS for static sites that use custom domains (they do offer HTTPS for non-custom domains, for free). There's an [open issue](https://github.com/isaacs/github/issues/156) around supporting it; but rather than wait for GitHub to maybe support this feature, I decided to migrate my site to [Netlify](https://www.netlify.com/), which offers SSL for custom domains.
 
 I was initially worried I might have some performance degredation with Netlify over GitHub. I connected my repository and built my site. Here are the results:
 
-![Netlify](images/netlify-lighthouse.png "Netlify - Lighthouse")
+![Netlify](../images/netlify-lighthouse.png "Netlify - Lighthouse")
 
 My scores increased with no effort and I saw comparable performance to GitHub pages. For example, I was seeing ~1 second to [first meaningful paint](https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint) on GitHub pages and ~1.3 seconds on Netlify. That was close enough without any optimization to move forward.
 
@@ -52,29 +52,29 @@ After getting my repository connected:
 
 Here are the results:
 
-![Hosted with Netlify](images/netlify-hosted-lighthouse.png "Hosted Netlify - Lighthouse")
+![Hosted with Netlify](../images/netlify-hosted-lighthouse.png "Hosted Netlify - Lighthouse")
 
 ## Asset Optimization
 This can be a complicated topic in web development, luckily this is literally a checkbox in Netlify ([here](https://www.netlify.com/blog/2017/02/15/how-to-shave-time-off-of-your-load-time-its-really-really-easy/) is an overview).
 
 Without asset optimization enabled, here are the asset requests:
 
-![No asset optimization](images/no-asset-optimization.png "No asset optimization")
+![No asset optimization](../images/no-asset-optimization.png "No asset optimization")
 
 And the lighthouse score:
 
-![performance lighthouse - no asset optimization](images/no-asset-optimization-lighthouse.png "performance lighthouse - no asset optimization")
+![performance lighthouse - no asset optimization](../images/no-asset-optimization-lighthouse.png "performance lighthouse - no asset optimization")
 
 - First meaningful paint - 1.35 seconds
 - First interactive paint - 2.06 seconds
 
 After enabling the asset optimization feature:
 
-![with asset optimization](images/asset-optimization.png "With asset optimization")
+![with asset optimization](../images/asset-optimization.png "With asset optimization")
 
 And the lighthouse score:
 
-![performance lighthouse - asset optimization](images/asset-optimization-lighthouse.png "performance lighthouse - asset optimization")
+![performance lighthouse - asset optimization](../images/asset-optimization-lighthouse.png "performance lighthouse - asset optimization")
 
 - First meaningful paint - 1.04 seconds
 - First interactive paint - 1.7 seconds
@@ -88,11 +88,11 @@ Service worker is a recent web technology which enables things like push notific
 
 Here is the lighthouse score before having a service worker and a robust manifest:
 
-![before service worker and manifest](images/before-worker-manifest.png "before service worker and manifest")
+![before service worker and manifest](../images/before-worker-manifest.png "before service worker and manifest")
 
 Here are the results after:
 
-![after service worker and manifest](images/after-worker-manifest.png "after service worker and manifest")
+![after service worker and manifest](../images/after-worker-manifest.png "after service worker and manifest")
 
 `:thumbs-up-emoji:`
 
@@ -106,7 +106,7 @@ I'm not a designer, so I found a couple great tools to help in this area. I inst
 
 Here are the results after:
 
-![after contrast](images/a11y-after-lighthouse.png "after a11y updates")
+![after contrast](../images/a11y-after-lighthouse.png "after a11y updates")
 
 ## Room for Improvement
 My best practices score seems to be out of my control:

@@ -70,7 +70,7 @@ One last finishing touch, a skull bottle opener and cap catcher.
 
 ![Skull Bottle Opener](images/overview-13.jpg "The most metal bottle opener")
 
-To see more of the build process in detail, click [here]({% post_url 2017-01-02-danger-brewing-javascript-powered-kegerator-build %}).
+To see more of the build process in detail, click [here]({{< ref "/posts/danger-brewing-javascript-powered-kegerator-build/build" >}} "build overview").
 
 ## Kegerator Build
 The freezer I purchased fits three corny kegs (maybe a fourth if it was smaller in size and the gas tanks were on the outside), however there are four taps. This was so I could operate 3 CO2 beers at once or some combination of CO2 and Beer Gas (nitro).
@@ -108,14 +108,14 @@ It is responsible for collecting sensor data and reporting it to my web applicat
 
 The hub is running a Node application, built using [Johnny Five](http://johnny-five.io/). The data it collects is reported to [Firebase](https://firebase.google.com/). The web application is using the same Firebase project as its data source.
 
-To read more about the technology build process in detail, click [here]({% post_url 2017-01-02-danger-brewing-javascript-powered-kegerator-tech %}).
+To read more about the technology build process in detail, click [here]({{< ref "/posts/danger-brewing-javascript-powered-kegerator-build/tech" >}} "technology build process").
 
 ## Wrapping Up
 This project took a lot longer than I had anticipated. I was often discouraged, spent too much money and learned lessons the hard way. But ultimately, when I poured that first beer and saw my web application update in real time — holy. shit.
 
 To see what I have on tap at any given moment or want to see how my freezer is doing, the web application can be found here: [dangerbrewing.io](http://www.dangerbrewing.io/). It’s currently hosted for free, so it may be slow to load. If you’re a complainer or some kind of jerk, feel free to send some dollars my way to fix that.
 
-To read more about the build process, click [here]({% post_url 2017-01-02-danger-brewing-javascript-powered-kegerator-build %}). Or to read more about the technology involved, head [here]({% post_url 2017-01-02-danger-brewing-javascript-powered-kegerator-tech %}).
+To read more about the build process, click [here]({{< ref "/posts/danger-brewing-javascript-powered-kegerator-build/build" >}} "build process"). Or to read more about the technology involved, head [here]({{< ref "/posts/danger-brewing-javascript-powered-kegerator-build/tech" >}} "technology build process").
 
 If you embark on a similar journey, I’d love to hear about it.
 

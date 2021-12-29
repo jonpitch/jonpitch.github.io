@@ -93,10 +93,10 @@ Not all of my supported browsers actual [support preload](https://caniuse.com/#s
 
 ## Results
 Before:
-![Web Manifest Lighthouse](images/manifest-lighthouse.png "Web Manifest - Lighthouse")
+![Web Manifest Lighthouse](../images/manifest-lighthouse.png "Web Manifest - Lighthouse")
 
 After:
-![Include Fonts Lighthouse](images/include-fonts-lighthouse.png "Include Fonts - Lighthouse")
+![Include Fonts Lighthouse](../images/include-fonts-lighthouse.png "Include Fonts - Lighthouse")
 
 We got a little better on accessibility and maxed out our SEO score, but our performance score didn't go anywhere. However we did lose the TypeKit network request and the multiple network round-trips to TypeKit. Also our time to first paint and first meaningful interactive got around .5 seconds faster. I'll take it.
 
@@ -105,12 +105,12 @@ _note: The SEO score going up was not a result of web fonts. At the time we were
 Moving on, why the hell is there **65 kB** of `lodash` in my vendor build?
 
 ## Keep reading
-- [Baseline]({% post_url 2018-09-01-ember-pwa-baseline %}) 
-- [Add web manifest]({% post_url 2018-09-02-ember-pwa-manifest %}) 
-- [Remove liquid fire]({% post_url 2018-09-03-ember-pwa-no-liquid-fire %}) 
-- [Bundle web fonts]({% post_url 2018-09-04-ember-pwa-include-web-fonts %}) _(you are here)_
-- [Random Lodash]({% post_url 2018-09-05-ember-pwa-random-lodash %})
-- [Moment Timezones]({% post_url 2018-09-06-ember-pwa-moment-timezones %})
-- [Remove Showdown]({% post_url 2018-09-07-ember-pwa-showdown %})
-- [Lazy Locales]({% post_url 2018-09-08-ember-pwa-lazy-locales %})
-- [Service Worker]({% post_url 2018-09-09-ember-pwa-service-worker %})
+- [Baseline]({{< ref "/posts/ember-pwa/baseline" >}} "baseline") 
+- [Add web manifest]({{< ref "/posts/ember-pwa/manifest" >}} "web manifest") 
+- [Remove liquid fire]({{< ref "/posts/ember-pwa/no-liquid-fire" >}} "remove liquid fire") 
+- [Bundle web fonts]({{< ref "/posts/ember-pwa/web-fonts" >}} "web fonts") _(you are here)_
+- [Random lodash]({{< ref "/posts/ember-pwa/random-lodash" >}} "random lodash")
+- [Moment Timezones]({{< ref "/posts/ember-pwa/moment-timezones" >}} "moment timezones")
+- [Remove Showdown]({{< ref "/posts/ember-pwa/showdown" >}} "remove showdown")
+- [Lazy Locales]({{< ref "/posts/ember-pwa/lazy-locales" >}} "lazy locales")
+- [Service worker]({{< ref "/posts/ember-pwa/service-worker" >}} "service worker")

@@ -7,10 +7,10 @@ tags: [android, ios, mobile]
 
 Here's the recap of the battle of the mobile platforms:
 
-* [Development Tools](/2015/02/21/development-battle-android-vs-ios-part1/): `Android`
-* [Code](/2015/03/16/development-battle-android-vs-ios-part2/): `Draw`
-* [Testing](/2015/03/24/development-battle-android-vs-ios-part3/): `Draw`
-* [Deployment and Metrics](/2015/04/19/development-battle-android-vs-ios-part4/): `Android`
+* [Development Tools]({{< ref "/posts/development-battle-android-vs-ios/part-1-development-tools" >}} "development tools"): `Android`
+* [Code]({{< ref "/posts/development-battle-android-vs-ios/part-2-code" >}} "code"): `Draw`
+* [Testing]({{< ref "/posts/development-battle-android-vs-ios/part-3-testing-debugging" >}} "testing and debugging"): `Draw`
+* [Deployment and metrics]({{< ref "/posts/development-battle-android-vs-ios/part-4-deployments-analytics-metrics" >}} "deployments and metrics"): `Android`
 
 <!--more-->
 

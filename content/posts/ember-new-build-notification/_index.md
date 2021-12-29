@@ -32,7 +32,7 @@ This addon will put a service worker into your Ember build, but it won't do much
 
 Next we need to attach our `onupdatefound` handler. In the root of your Ember project, not `/app`, literally the root (outside of the app tree), add `/service-worker-registration/index.js` with the following:
 
-{% gist jonpitch/0b324bad7a2b52d856543f991cb1dc45 sw-registration.js %}
+{{< gist jonpitch 0b324bad7a2b52d856543f991cb1dc45 sw-registration.js >}}
 
 We are going to use `window.isUpdateAvailable` to know when a new build is available. For browsers that support [Promises](https://caniuse.com/#search=Promise), we create a promise that will hook in to the `ember-service-worker` lifecycle. When our service worker successfully installs, our function is invoked and we receive the service worker registration (`reg`). We add a little function to the `onstatechange` event, that when the service worker activates, resolves our promise.
 
@@ -46,7 +46,7 @@ ember g component new-build-notifier
 
 The component code will be:
 
-{% gist jonpitch/0b324bad7a2b52d856543f991cb1dc45 new-build-notifier.js %}
+{{< gist jonpitch 0b324bad7a2b52d856543f991cb1dc45 new-build-notifier.js >}}
 
 Let's walk through this component:
 
@@ -64,7 +64,7 @@ Issue a `GET /sw.js` request and tell the service worker to update itself. When 
 ## Result
 I can deploy code often and users who have stale builds will see a very nice notification informing them to upgrade to the latest version.
 
-![new build notification](images/new-build-notifier.png "new build notification")
+![new build notification](../images/new-build-notifier.png "new build notification")
 
 _Shameless plug, you should encourage your company to take the [B Impact Assessment](https://app.bimpactassessment.net)._
 
