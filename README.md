@@ -16,7 +16,6 @@ TODO
 
 # to do list - delete
 
-- google analytics
 - service worker
 - pwa
 - design
