@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="great developer. home brewer and metal head. writer of haiku.">
+    <meta name="theme-color" content="#000000" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/mstile-310x310.png" />
+    {{ block "robots" . }}
+    {{ end }}
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+    <link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
+    <link rel="alternate" type="application/atom+xml" title="feed from Jon Pitcherella" href="/index.xml" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    {{ template "_internal/google_analytics.html" . }}
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="/" aria-label="navigate to home"><svg id="menu" role="navigation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 338.000000 338.000000"><metadata>Created by potrace 1.11, written by Peter Selinger 2001-2013</metadata><g transform="translate(0.000000,338.000000) scale(0.100000,-0.100000)" stroke="none"><path d="M0 1690 l0 -1690 1690 0 1690 0 0 1690 0 1690 -1690 0 -1690 0 0 -1690z m2470 820 l0 -150 160 0 160 0 0 -480 0 -480 -160 0 -160 0 0 -320 0 -320 -160 0 -160 0 0 160 0 160 -150 0 -150 0 0 -160 0 -160 -170 0 -170 0 0 160 0 160 -140 0 -140 0 0 -160 0 -160 -170 0 -170 0 0 320 0 320 -160 0 -160 0 0 480 0 480 160 0 160 0 0 150 0 150 790 0 790 0 0 -150z"/><path d="M910 1870 l0 -150 300 0 300 0 0 150 0 150 -300 0 -300 0 0 -150z"/><path d="M1850 1870 l0 -150 300 0 300 0 0 150 0 150 -300 0 -300 0 0 -150z"/></g></svg></a>
+      </div>
+      <div>
+        <button id="light" title="light color scheme">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="color-scheme-light"><path d="M12 18c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6zm0-10c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0-4a1 1 0 0 1-1-1V1a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1zm0 20a1 1 0 0 1-1-1v-2a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1zM5.64 6.64a.997.997 0 0 1-.707-.293l-1.42-1.42a.999.999 0 1 1 1.414-1.414l1.42 1.42A.999.999 0 0 1 5.64 6.64zm14.139 14.139a.997.997 0 0 1-.707-.293l-1.42-1.42a.999.999 0 1 1 1.414-1.414l1.42 1.42a.999.999 0 0 1-.707 1.707zM3 13H1a1 1 0 1 1 0-2h2a1 1 0 0 1 0 2zm20 0h-2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2zM4.22 20.779a.999.999 0 0 1-.707-1.707l1.42-1.42a.999.999 0 1 1 1.414 1.414l-1.42 1.42a.993.993 0 0 1-.707.293zM18.359 6.64a.999.999 0 0 1-.707-1.707l1.42-1.42a.999.999 0 1 1 1.414 1.414l-1.42 1.42a.997.997 0 0 1-.707.293z"></path></svg>
+        </button>
+        <button id="dark" title="dark color scheme">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="color-scheme-dark"><path d="M12.048 21.963c-.308 0-.618-.015-.93-.043-2.66-.246-5.064-1.513-6.771-3.567s-2.512-4.651-2.266-7.311a10.004 10.004 0 0 1 9.038-9.038 1 1 0 0 1 .896 1.589 6.008 6.008 0 0 0 1.258 8.392c2.078 1.536 5.055 1.536 7.133 0a1 1 0 0 1 1.591.896 9.951 9.951 0 0 1-9.949 9.082zM9.315 4.438a8.006 8.006 0 0 0-5.244 6.787 7.954 7.954 0 0 0 1.813 5.849 7.95 7.95 0 0 0 5.417 2.854 7.95 7.95 0 0 0 8.266-5.243 8.01 8.01 0 0 1-2.729.476 7.946 7.946 0 0 1-4.755-1.565C9.174 11.443 8.145 7.68 9.315 4.438z"></path></svg>
+        </button>
+      </div>
+    </nav>
+    {{ block "main" . }}{{ end }}
+    <footer>
+        <p class="footer__p--center">{{ replace .Site.Copyright "{year}" now.Year }}</p>
+    </footer>
+
+    <script type="text/javascript">
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register("/sw.js");
+      }
+    </script>
+
+    <script type="text/javascript">
+      const light = document.querySelector('button#light');
+      const dark = document.querySelector('button#dark');
+
+      function toggleLightScheme() {
+        if (light.classList.contains('selected')) {
+          return;
+        }
+
+        dark.classList.remove('selected');
+        light.classList.add('selected');
+        document.documentElement.setAttribute('data-theme', 'light');
+        if (localStorage) {
+          localStorage.setItem('theme', 'light');
+        }
+      }
+
+      function toggleDarkScheme() {
+        if (dark.classList.contains('selected')) {
+          return;
+        }
+
+        light.classList.remove('selected');
+        dark.classList.add('selected');
+        document.documentElement.setAttribute('data-theme', 'dark');
+        if (localStorage) {
+          localStorage.setItem('theme', 'dark');
+        }
+      }
+
+      const media = window.matchMedia('(prefers-color-scheme: dark)').media;
+      if (media === 'not all') {
+        light.style.display = 'none';
+        dark.style.display = 'none';
+      } else {
+        if (localStorage) {
+          const theme = localStorage.getItem('theme');
+          if (theme === 'dark') {
+            toggleDarkScheme();
+          } else if (theme === 'light') {
+            toggleLightScheme();
+          } else if (media === '(prefers-color-scheme: dark)') {
+            toggleDarkScheme();
+          } else {
+            toggleLightScheme();
+          }
+        } else if (media === '(prefers-color-scheme: dark)') {
+          toggleDarkScheme();
+        } else {
+          toggleLightScheme();
+        }
+
+        light.addEventListener('click', toggleLightScheme, false);
+        dark.addEventListener('click', toggleDarkScheme, false);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{{ define "robots" }}
+    <meta name="robots" content="noindex" />
+{{ end }}
+
+{{ define "main" }}
+<main class="content">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
+    {{ range .Pages }}
+        <article>
+            <h3>
+                <a href="{{.Permalink}}">{{ .Title }}</a>
+            </h3>
+            <p>{{ .Summary }}</p>
+            <footer>
+                <p>
+                    <time datetime="{{.Date.Format `2006-01-02`}}">
+                        {{.Date.Format "2006-01-02"}}
+                    </time>
+                </p>
+              </footer>
+        </article>
+    {{ end }}
+</main>
+{{ end }}

@@ -1,0 +1,132 @@
+:root {
+    --bg-color: #e7e7e7;
+    --font-color: #111111;
+    --gist-bg-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1b1b1b;
+        --font-color: #ffffff;
+        --gist-bg-color: #ccc;
+    }
+}
+
+:root[data-theme="light"] {
+    --bg-color: #e7e7e7;
+    --font-color: #111111;
+    --gist-bg-color: #fff;
+}
+
+:root[data-theme="dark"] {
+    --bg-color: #1b1b1b;
+    --font-color: #ffffff;
+    --gist-bg-color: #ccc;
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--font-color);
+}
+
+nav button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+nav button.selected {
+    border-bottom: 1px solid var(--font-color);
+}
+
+nav button svg {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--font-color);
+}
+
+main {
+    flex: 1;
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+}
+
+pre {
+    display: block;
+    overflow: auto;
+    padding: .5em;
+}
+
+main.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main.home ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main.home li {
+    display: inline-block;
+}
+
+main.home svg {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--font-color);
+}
+
+.footer__p--center {
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: center;
+}
+
+main.content {
+    margin: 0 4em 0 4em;
+}
+
+main.content p {
+    font-size: 1rem;
+}
+
+main.content footer {
+    font-style: italic;
+}
+
+/* override gist styles */
+body .gist .highlight {
+    background-color: var(--gist-bg-color);
+}
+
+body .gist .gist-meta {
+    display: none;
+}

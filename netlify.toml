@@ -1,0 +1,218 @@
+[build]
+    command = "hugo --gc --minify"
+    publish = "public"
+
+[build.environment]
+    HUGO_VERSION = "0.91.2"
+
+# redirects from old jekyll site
+# keep these around until ~december 2022
+[[redirects]]
+    from = "/blog/tag/*"
+    to = "/tags/:splat"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2013/06/12/android-listview-optimization"
+    to = "/posts/android-listview-optimization"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2013/06/12/android-overdraw-optimization"
+    to = "/posts/android-overdraw-optimization"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2013/06/12/ubuntu-64-bit-and-juniper-vpn"
+    to = "/posts/ubuntu-64-bit-and-juniper-vpn"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2013/06/24/google-plus-listview-animation"
+    to = "/posts/google-plus-listview-animation"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2013/07/30/building-a-mean-pi"
+    to = "/posts/building-a-mean-pi"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2013/09/23/mobile-caching-strategy"
+    to = "/posts/mobile-caching-strategy"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2013/12/04/google-glass-first-impressions"
+    to = "/posts/google-glass-first-impressions"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2014/03/21/codeception-acceptance-tests-using-multiple-databases"
+    to = "/posts/codeception-acceptance-tests-using-multiple-databases"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2014/06/24/setting-up-email-with-postfix-dovecot-and-mysql"
+    to = "/posts/setting-up-email-with-postfix-dovecot-and-mysql"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2015/03/17/why-ember-is-the-cats-pajamas"
+    to = "/posts/why-ember-is-the-cats-pajamas"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2015/03/25/recruiters-doing-it-wrong"
+    to = "/posts/recruiters-doing-it-wrong"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2015/04/11/ember-firebase-go-where-eagles-dare"
+    to = "/posts/ember-firebase-go-where-eagles-dare"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2015/05/30/product-lessons-learned"
+    to = "/posts/product-lessons-learned"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2015/06/13/codeception-dump-made-easy"
+    to = "/posts/codeception-dump-made-easy"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2016/01/03/code-quality-matters"
+    to = "/posts/code-quality-matters"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2016/01/18/ember-get-more-done"
+    to = "/posts/ember-get-more-done"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2016/01/24/nobody-will-steal-your-dumb-idea"
+    to = "/posts/nobody-will-steal-your-dumb-idea"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2016/07/27/write-better-ember-tests"
+    to = "/posts/write-better-ember-tests"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2016/08/28/solving-localization"
+    to = "/posts/solving-localization"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2017/04/30/coffeebot"
+    to = "/posts/coffeebot"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2017/01/01/danger-brewing-javascript-powered-kegerator-overview"
+    to = "/posts/danger-brewing-javascript-powered-kegerator-build"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2017/01/02/danger-brewing-javascript-powered-kegerator-build"
+    to = "/posts/danger-brewing-javascript-powered-kegerator-build/build"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2017/01/02/danger-brewing-javascript-powered-kegerator-tech"
+    to = "/posts/danger-brewing-javascript-powered-kegerator-build/tech"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2018/01/09/personal-site-pwa"
+    to = "posts/personal-site-pwa"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2018/09/26/ember-new-build-notification"
+    to = "/posts/ember-new-build-notification"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2015/04/19/development-battle-android-vs-ios-part5"
+    to = "/posts/development-battle-android-vs-ios"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2015/04/19/development-battle-android-vs-ios-part4"
+    to = "/posts/development-battle-android-vs-ios"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2015/03/24/development-battle-android-vs-ios-part3"
+    to = "/posts/development-battle-android-vs-ios"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2015/03/16/development-battle-android-vs-ios-part2"
+    to = "/posts/development-battle-android-vs-ios"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2015/02/21/development-battle-android-vs-ios-part1"
+    to = "/posts/development-battle-android-vs-ios"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2015/01/30/meta-chrome-quick-win"
+    to = "posts/meta-chrome-quick-win"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2015/01/27/development-battle-android-vs-ios"
+    to = "/posts/development-battle-android-vs-ios"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2016/04/02/ember-theming"
+    to = "/posts/ember-theming"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/2018/01/09/personal-site-pwa"
+    to = "/posts/personal-site-pwa"
+    status = 301
+    force = true
