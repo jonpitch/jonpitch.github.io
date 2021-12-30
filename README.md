@@ -16,7 +16,7 @@ TODO
 
 # to do list - delete
 
-- toggle dark mode
+- nav
 - re-enable & sw register cached urls
 - gh actions?
 - netlify build
