@@ -1,4 +1,9 @@
-var urlsToCache = [];
+var urlsToCache = [
+    '/favicon.ico',
+    '/manifest.json',
+    '/css/styles.css',
+    '/404.html'
+];
 
 var CACHE_NAME = 'jon-pitcherella-v1';
 

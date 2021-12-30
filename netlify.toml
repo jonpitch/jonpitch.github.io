@@ -1,3 +1,10 @@
+[build]
+    command = "hugo --gc --minify"
+    publish = "public"
+
+[build.environment]
+    HUGO_VERSION = "0.91.2"
+
 # redirects from old jekyll site
 # keep these around until ~december 2022
 [[redirects]]

@@ -9,14 +9,3 @@ prerequisites:
 
 1. `hugo server -D`
 1. visit [http://localhost:1313/](http://localhost:1313/)
-
-# contributing
-
-TODO
-
-# to do list - delete
-
-- re-enable & sw register cached urls
-- gh actions?
-- netlify build
-- netlify lighthouse
