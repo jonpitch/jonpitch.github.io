@@ -3,3 +3,4 @@ languageCode = 'en-US'
 title = 'Jon Pitcherella'
 copyright = 'copyright Jon Pitcherella {year}'
 googleAnalytics = 'UA-33882544-1'
+enableRobotsTXT = true

@@ -64,7 +64,7 @@ Issue a `GET /sw.js` request and tell the service worker to update itself. When 
 ## Result
 I can deploy code often and users who have stale builds will see a very nice notification informing them to upgrade to the latest version.
 
-![new build notification](../images/new-build-notifier.png "new build notification")
+![new build notification](images/new-build-notifier.png "new build notification")
 
 _Shameless plug, you should encourage your company to take the [B Impact Assessment](https://app.bimpactassessment.net)._
 

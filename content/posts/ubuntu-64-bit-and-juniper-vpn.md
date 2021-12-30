@@ -25,7 +25,7 @@ The VPN I connect to requires a username, password and token. There are other me
 3. Symbolic link your libnpjp2.so
   * Your 32 bit version of Java came with this .so file, which you can find at: `<your Java JRE directory>/lib/i386/libnpjp2.so`
   * Symlink this file to your 32 bit Firefox plugins directory
-    * sudo ln -s <Your libnpjp2.so file path> /usr/lib/mozilla/plugins
+    * `sudo ln -s <Your libnpjp2.so file path> /usr/lib/mozilla/plugins`
     * Execute this in your terminal, without quotes and replacing the correct paths
 4. Test out your Java installation
   * Visit [this URL](http://www.java.com/en/download/testjava.jsp) in your 32-bit Firefox and make sure you're in fact using 32 bit Java
@@ -33,4 +33,4 @@ The VPN I connect to requires a username, password and token. There are other me
 5. Launch Juniper
   * Visit your Juniper URL, enter your credentials and you should be all set.
 
-Granted this isn't as nice as going through network manager, but it works. I do occasionally run into an issue where my Juniper applet doesn't start. However, going through the Juniper URL a 2nd time always works.
+Granted this isn't as nice as going through network manager, but it works. I do occasionally run into an issue where my Juniper applet doesn't start. However, going through the Juniper URL a 2nd time always works.

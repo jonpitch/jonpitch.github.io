@@ -1,0 +1,6 @@
+User-agent: *
+{{ range where .Site.Pages "Kind" "term" }}
+Disallow: {{ .Permalink }}{{ end }}{{ range where .Site.Pages "Kind" "taxonomy" }}
+Disallow: {{ .Permalink }}{{ end }}
+
+sitemap: {{ .Site.BaseURL }}sitemap.xml
