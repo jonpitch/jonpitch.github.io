@@ -16,7 +16,6 @@ TODO
 
 # to do list - delete
 
-- nav
 - re-enable & sw register cached urls
 - gh actions?
 - netlify build

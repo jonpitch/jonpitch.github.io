@@ -6,7 +6,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-color: #333333;
+        --bg-color: #1b1b1b;
         --font-color: #ffffff;
         --gist-bg-color: #ccc;
     }
@@ -19,7 +19,7 @@
 }
 
 :root[data-theme="dark"] {
-    --bg-color: #333333;
+    --bg-color: #1b1b1b;
     --font-color: #ffffff;
     --gist-bg-color: #ccc;
 }
@@ -32,6 +32,17 @@ body {
     min-height: 95vh;
     background-color: var(--bg-color);
     color: var(--font-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--font-color);
 }
 
 nav button {
