@@ -37,22 +37,23 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
     <link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
     <link rel="alternate" type="application/atom+xml" title="feed from Jon Pitcherella" href="/index.xml" />
+    <link rel="stylesheet" href="/css/styles.css" />
 
     {{ template "_internal/google_analytics.html" . }}
   </head>
   <body>
-    <main>
-        {{ block "main" . }}
-        {{ end }}
-    </main>
+    <nav>
+      <!-- placeholder -->
+    </nav>
+    {{ block "main" . }}{{ end }}
     <footer>
-        <p>{{ replace .Site.Copyright "{year}" now.Year }}</p>
+        <p class="footer__p--center">{{ replace .Site.Copyright "{year}" now.Year }}</p>
     </footer>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register("/sw.js");
       }
-    </script>
+    </script> -->
   </body>
 </html>

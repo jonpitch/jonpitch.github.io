@@ -16,8 +16,8 @@ TODO
 
 # to do list - delete
 
-- design
-- sw register urls
+- toggle dark mode
+- re-enable & sw register cached urls
 - gh actions?
 - netlify build
 - netlify lighthouse

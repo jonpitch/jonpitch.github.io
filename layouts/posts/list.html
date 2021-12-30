@@ -3,18 +3,23 @@
 {{ end }}
 
 {{ define "main" }}
-    <h1>{{.Title}}</h1>
-    <p>{{.Content}}</p>
+<main class="content">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
     {{ range .Pages }}
         <article>
-            <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
-            <p>{{.Summary}}</p>
+            <h3>
+                <a href="{{.Permalink}}">{{ .Title }}</a>
+            </h3>
+            <p>{{ .Summary }}</p>
             <footer>
                 <p>
-                  Posted on
-                  <time datetime="{{.Date.Format `2006-01-02`}}">{{.Date.Format "2006-01-02"}}</time>
+                    <time datetime="{{.Date.Format `2006-01-02`}}">
+                        {{.Date.Format "2006-01-02"}}
+                    </time>
                 </p>
               </footer>
         </article>
     {{ end }}
+</main>
 {{ end }}

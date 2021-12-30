@@ -3,6 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
+<main>
     <h1>all posts tagged with: {{.Title}}</h1>
     <p>{{.Content}}</p>
     {{ range .Pages }}
@@ -17,4 +18,5 @@
               </footer>
         </article>
     {{ end }}
+</main>
 {{ end }}
