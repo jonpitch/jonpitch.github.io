@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="great developer. home brewer and metal head. writer of haiku.">
+    <meta name="description" content="{{ $.Site.Params.description }}">
     <meta name="theme-color" content="#000000" />
     <meta name="application-name" content="&nbsp;" />
     <meta name="msapplication-TileColor" content="#000000" />
@@ -15,6 +15,19 @@
     <meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="/mstile-310x310.png" />
+    <meta property="og:title" content="{{ .Site.Title }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:description" content="{{ $.Site.Params.description }}">
+    <meta property="og:image" content="{{ .Permalink }}social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:title" content="{{ .Site.Title }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="{{ $.Site.Params.description }}">
+    <meta name="twitter:image" content="{{ .Permalink }}social.png">
+    <meta name="twitter:site" content="@jonpitch">
+    <meta name="twitter:creator" content="@jonpitch">
     {{ block "robots" . }}
     {{ end }}
 

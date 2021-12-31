@@ -5,7 +5,7 @@ var urlsToCache = [
     '/404.html'
 ];
 
-var CACHE_NAME = 'jon-pitcherella-v1';
+var CACHE_NAME = 'jon-pitcherella-v2';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
