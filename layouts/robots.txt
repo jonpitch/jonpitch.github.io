@@ -1,6 +1,3 @@
 User-agent: *
-{{ range where .Site.Pages "Kind" "term" }}
-Disallow: {{ .RelPermalink }}{{ end }}{{ range where .Site.Pages "Kind" "taxonomy" }}
-Disallow: {{ .RelPermalink }}{{ end }}
 
 sitemap: {{ .Site.BaseURL }}sitemap.xml
