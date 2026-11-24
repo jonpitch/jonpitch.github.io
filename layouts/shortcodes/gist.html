@@ -1,0 +1,5 @@
+{{- $src := printf "https://gist.github.com/%s/%s.js" (.Get 0) (.Get 1) -}}
+{{- with .Get 2 -}}
+  {{- $src = printf "%s?file=%s" $src (urlquery .) -}}
+{{- end -}}
+<script src="{{ $src }}" defer></script>
